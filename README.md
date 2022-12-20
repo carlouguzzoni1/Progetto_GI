@@ -37,3 +37,26 @@ may be appropriate.
 [rst]: http://docutils.sourceforge.net/rst.html
 [md]: https://tools.ietf.org/html/rfc7764#section-3.5 "CommonMark variant"
 [md use]: https://packaging.python.org/specifications/core-metadata/#description-content-type-optional
+
+Down below you can fine an example code to create a Index. Remember that you will always need a folder called "csv" in the directory where you are using the python shell.
+
+```python 
+import project.src.back_end.Database as dd
+import project.src.back_end.IndexGenerator as ig
+from whoosh.fields import *
+from whoosh.analysis import StemmingAnalyzer
+
+db = dd.Database('./csv/airline.csv')
+db.fillDb()
+db.filterFields('handle','text')
+db.getSample(50, ods=True, csv=True)
+
+schema = Schema(
+    handle = TEXT(stored = True, analyzer = StemmingAnalyzer()),
+    text = TEXT(stored = True, analyzer = StemmingAnalyzer())
+    )
+
+i = ig.IndexGenerator(schema, db)
+i.fillIndex()
+```
+
