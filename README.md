@@ -39,7 +39,7 @@ may be appropriate.
 [md use]: https://packaging.python.org/specifications/core-metadata/#description-content-type-optional
 
 # Creation of the Index
-Down below you can fine an example code to create a Index. Remember that you will always need a folder called "csv" in the directory where you are using the python shell.
+Down below you can find an example code that shows how to create a Index. Remember that you will always need a folder called "csv" in the directory where you are using the python shell, containing the csv files. You can download an example folder from here https://github.com/theElandor/csv.
 
 ```python 
 import project.src.back_end.Database as dd
