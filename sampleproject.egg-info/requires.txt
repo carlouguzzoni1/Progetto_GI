@@ -1,0 +1,13 @@
+peppercorn
+VaderSentiment
+whoosh
+tqdm
+pyexcel_ods3
+expertai-nlapi
+transformers
+
+[dev]
+check-manifest
+
+[test]
+coverage
