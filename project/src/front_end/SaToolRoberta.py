@@ -48,3 +48,4 @@ class SaToolRoberta(SaTool):
                 sent_score = scores[5]["score"]
             case "surprise":
                 sent_score = scores[6]["score"]
+        return sent_score

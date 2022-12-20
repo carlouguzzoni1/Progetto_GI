@@ -110,7 +110,7 @@ class Searcher:
         self._searcher = self._ix.searcher()
 
 
-    def submit_query(self, raw_query):
+    def submit_query(self, raw_query, results_threshold=20):
         """
         Sottopone una query all'indice Whoosh.
         :param raw_query:   str, una query a discrezione dell'utente.
@@ -122,7 +122,6 @@ class Searcher:
         # Decoratore che stampa il tempo di esecuzione.
         clock = time_function(self._searcher.search)
         # Definisce il numero massimo di risultati considerati.
-        results_threshold = 1000
         # Sottopone la query.
         results = clock(query, limit = results_threshold)
         # Se vi sono risultati, li restituisce, altrimenti stampa suggerimenti.

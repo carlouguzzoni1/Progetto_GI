@@ -13,7 +13,7 @@ from project.src.front_end.Searcher import Searcher
 s = Searcher("handle", "text")
 
 # Estrazione dei risultati con inserimento di una query.
-res = s.submit_query("american food")
+res = s.submit_query("american airline")
 # Elaborazione dei risultati in un oggetto Results, tramite lo strumento
 # di sentiment analysis Vader, impostato per il sentiment complessivo.
 r = Results("Vader", "compound", res)
