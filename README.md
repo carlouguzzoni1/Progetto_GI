@@ -97,6 +97,10 @@ sistema di Opinion Retrieval e come ulteriore esempio di utilizzo dei tool da no
 Il sistema di valutazione adottato è il **DCG** (*Distance Comulative Gain*), basato su un campione casuale
 di 50 Tweet i cui valori di rilevanza rispetto alle query sono stati generati casualmente per ragioni didattiche.
 Per studiare effettivamente le performance, basta modificare il file csv generato dal metodo **sample** dell'oggetto `Database` inserendo le annotazioni a mano.
+Il codice dello script è riportato sotto, ma può anche essere eseguito usando il seguente comando:
+```sh
+import project.tests.benchmarking_script
+```
 
 ```python
 # Parte 1: costruzione dell'indice da un campione casuale preso dal corpora.
