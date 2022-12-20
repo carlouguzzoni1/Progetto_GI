@@ -38,6 +38,7 @@ may be appropriate.
 [md]: https://tools.ietf.org/html/rfc7764#section-3.5 "CommonMark variant"
 [md use]: https://packaging.python.org/specifications/core-metadata/#description-content-type-optional
 
+# Creation of the Index
 Down below you can fine an example code to create a Index. Remember that you will always need a folder called "csv" in the directory where you are using the python shell.
 
 ```python 
@@ -59,4 +60,19 @@ schema = Schema(
 i = ig.IndexGenerator(schema, db)
 i.fillIndex()
 ```
+# Example of usage
+```python
+from project.src.front_end.Results import Results
+from project.src.front_end.Searcher import Searcher
 
+
+s = Searcher("handle", "text")
+
+res = s.submit_query("american airline")
+r = Results("Vader", "compound", res)
+r.printResults(s, "output.txt") 
+
+res2 = s.submit_query("service on board")
+r2 = Results("Vader", "compound", res2)
+r2.printResults(s, "output2.txt")
+```
