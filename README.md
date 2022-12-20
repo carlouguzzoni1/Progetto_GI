@@ -92,6 +92,12 @@ r2.printResults(s, "output2.txt")
 
 ```
 ## Benchmarking
+Il software contiene anche uno script di benchmarking pre-installato, per valutare l'efficacia del
+sistema di Opinion Retrieval e come ulteriore esempio di utilizzo dei tool da noi creati.
+Il sistema di valutazione adottato è il **DCG** (*Distance Comulative Gain*), basato su un campione casuale
+di 50 Tweet i cui valori di rilevanza rispetto alle query sono stati generati casualmente per ragioni didattiche.
+Per studiare effettivamente le performance, basta modificare il file csv generato dal metodo **sample** dell'oggetto `Database` inserendo le annotazioni a mano.
+
 ```python
 # Parte 1: costruzione dell'indice da un campione casuale preso dal corpora.
 # Import necessari.
