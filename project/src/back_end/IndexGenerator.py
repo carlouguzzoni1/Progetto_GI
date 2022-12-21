@@ -28,9 +28,9 @@ class IndexGenerator:
             os.mkdir(self.index_dir)            
         ix = index.create_in(self.index_dir, self.schema)
         ix = index.open_dir(self.index_dir)
-        
+
         self.writer = ix.writer()
-        
+                
     def fillIndex(self):
         """
         Metodo che riempie l'indice con i Tweets contenuti nel database.
