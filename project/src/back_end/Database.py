@@ -51,6 +51,9 @@ class Database:
 
         :param *args: list, lista di stringhe
         """
+        for selected_field in args:
+            if selected_field not in self._fields:
+                raise Exception(selected_field + " non è presente tra i campi del file.")
         self._tweets.clear()
         for row in self._raw_data:
             filtered = dict(filter(lambda elem : (elem[0] in args), row.items()))
@@ -60,31 +63,18 @@ class Database:
            
     @property
     def tweets(self):
-        """
-        Metodo getter per la lista di Tweet.
-        """
         return self._tweets
-
-    def printRawDb(self):
+    
+    @property
+    def fields(self):
+        return self._fields
+    
+    def __str__(self):
         """
-        Funzione di debug per stampare i dati grezzi.
+        Stampa dei dati non processati.
         """
-        for x in self._raw_data:
-            print(x)
+        return str(self._raw_data)
             
-    def printDb(self):
-        """
-        Funzione di debug per stampare i Tweet, creati con il metodo filterFields.
-        """
-        for t in self._tweets:
-            print(t)
-            
-    def printFields(self):
-        """
-        Funzione di debug per stampare i campi del file csv.
-        """
-        print(self._fields)
-
     def getSample(self, n, ods=False, csv=False):
         """
         Metodo per estrarre dai Tweet un campione casuale di n elementi.
