@@ -1,8 +1,8 @@
-from project.src.front_end.SaToolFactory import SaToolFactory
-from project.src.back_end.AbstractPrinter import AbstractPrinter
-from project.src.back_end.TxtPrinter import TxtPrinter
-from project.src.back_end.OdsPrinter import OdsPrinter
-from project.src.back_end.CsvPrinter import CsvPrinter
+from project.src.tools.SaToolFactory import SaToolFactory
+from project.src.printers.AbstractPrinter import AbstractPrinter
+from project.src.printers.TxtPrinter import TxtPrinter
+from project.src.printers.OdsPrinter import OdsPrinter
+from project.src.printers.CsvPrinter import CsvPrinter
 from pathlib import Path
 import sys
 
@@ -16,15 +16,18 @@ class Results:
     """
 
 
-    def __init__(self, tool_name, sentiment, results, textual_field = "text"):
+    def __init__(self, tool_name, sentiment, results, textual_field = "text",
+                 ranking_fun = "balanced_weighted_avg"):
         """
         Costruttore di classe.
-        :param tool_name:   str, nome del tool di sentiment analysis.
-        :param sentiment:   str, tipo di sentiment da considerare.
-        :param results:     Results, oggetto generato da una query su un
-                            indice Whoosh.
-        :param textual_field:   str, default "text", campo testuale su cui
-                                fare sentimente analysis.
+        :param tool_name:       str, nome del tool di sentiment analysis.
+        :param sentiment:       str, tipo di sentiment da considerare.
+        :param results:         Results, oggetto generato da una query su un
+                                indice Whoosh.
+        :param textual_field:   str, "text" di default, nome campo testuale su
+                                cui fare sentiment analysis.
+        :param ranking_fun:     str, "naive" di default, nome associato alla
+                                funzione di ranking da usare.
         """
         # Selezione del tool per sentiment analysis.
         self.__select_tool(tool_name)
@@ -33,7 +36,7 @@ class Results:
         # Elaborazione risultati.
         self.__elaborate_results(results, textual_field)
         # Ordinamento risultati.
-        self.__order_results()
+        self.__order_results(ranking_fun)
 
 
     # Rende disponibile il tool di sentiment analysis anche al di fuori
@@ -70,7 +73,7 @@ class Results:
     def ordered(self):
         return self._ordered
     
-
+    
     def __select_tool(self, tool_name):
         """
         Seleziona un tool per sentiment analysis e lo imposta come attributo
@@ -82,7 +85,7 @@ class Results:
         try:
             tool = eval("SaToolFactory.make_{}()".format(tool_name))
         except:
-            raise ValueError("Nome del tool non corretto.")
+            raise ValueError("Wrong tool name.")
 
         # Imposta tool e nome del tool come attributi di istanza.
         self._sa_tool = tool
@@ -99,7 +102,7 @@ class Results:
         """
         # Lancia Exception se non sono presenti risultati.
         if not results:
-            raise Exception("Nessun risultato per la query inserita.")
+            raise Exception("No result for this query.")
 
         self._ordered = []
         # Sequenza di costruzione di _ordered.
@@ -120,16 +123,37 @@ class Results:
             self._ordered.append(result)
 
 
-    def __order_results(self):
+    def __order_results(self, ranking_fun):
         """
         Ordina la struttura dati dei risultati in base ad una formula di
         ordinamento predefinita, che combina il punteggio di pertinenza con
         quello relativo al sentiment.
         """
+        # Determina la funzione di ranking in base al parametro.
+        if ranking_fun == "naive":
+            def ranking_calc(a, b):
+                return a * b
+        elif ranking_fun == "weighted_avg":
+            def ranking_calc(a, b, wa = 0.6, wb = 0.4):
+                return a * wa + b * wb
+        elif ranking_fun == "balanced_weighted_avg":
+            def ranking_calc(a, b, wa = 0.6, wb = 0.4):
+                max_pert = max([i["pert_score"] for i in self._ordered])
+                # Se il valore massimo di pertinenza è 0, lo si setta ad un
+                # valore default = 1000, per abbattere il primo addendo ed
+                # evitare divisione per 0.
+                if max_pert == 0:
+                    max_pert = 1000
+                return (a / max_pert) * wa + b * wb
+        else:
+            raise ValueError("Selected ranking function not supported.")
+
+        # Applica la funzione di ranking selezionata per il calcolo del ranking
+        # complessivo.
         for i in self._ordered:
-            # Formula di calcolo predefinita (work-in-progress).
-            final_score = i["pert_score"] * i["sent_score"]
+            final_score = ranking_calc(i["pert_score"], i["sent_score"])
             i.update({"final_score" : final_score})
+
         # Riordino finale, per score complessivo decrescente.
         self._ordered = sorted(
             self._ordered,
@@ -161,4 +185,4 @@ class Results:
                 printer = globals()[name](*printer_params)
                 printer.formatOutput(filename)
             else:
-                raise Exception("Estensione "+ str(ext) + " non supportata.")
+                raise Exception("Extension "+ str(ext) + " not supported.")

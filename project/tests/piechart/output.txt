@@ -1,0 +1,709 @@
+ __| |_________________| |__
+         (__| |_________________| |__)
+            | |  Query Results  | |
+          __| |_________________| |__
+         (__|_|_________________|_|__)
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+Query:  technical problems with flight 
+N° of results:  100 
+Sentiment:  compound
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+docnum --> 12437
+handle --> American
+text --> @AmericanAir so great AA1103 sitting for an hour first technical problems now what?
+pert_score --> 8.812297394275136
+sent_score --> 0.4005
+final_score --> 0.7602
+-----------------------------------------
+docnum --> 4101
+handle --> United
+text --> @united I'm 0/3 for Flight Booking Problems without major problems. 0% isn't bad!👎👎
+pert_score --> 6.747946429205472
+sent_score --> 0.6924
+final_score --> 0.736405213475608
+-----------------------------------------
+docnum --> 7483
+handle --> Delta
+text --> @JetBlue's flight Flight Booking Problems experience is pretty great!
+pert_score --> 6.325111104140444
+sent_score --> 0.7088
+final_score --> 0.7141757634958747
+-----------------------------------------
+docnum --> 1305
+handle --> United
+text --> @united never ever again will I be Flight Booking Problems a flight with United or any affiliate if there is a chance to get on a United flight
+pert_score --> 5.357680626361781
+sent_score --> 0.7717
+final_score --> 0.673466642119616
+-----------------------------------------
+docnum --> 8640
+handle --> Delta
+text --> @JetBlue Flight Booking Problems flights for a DC visit for Easter weekend started difficult but ended well with you guys! Big fan here. :)
+pert_score --> 4.796953359009574
+sent_score --> 0.807
+final_score --> 0.6494085887291474
+-----------------------------------------
+docnum --> 2839
+handle --> United
+text --> @united yes it is partly used, the del-ewr is used, the return flight was Cancelled Flightled due to technical glitch in operations
+pert_score --> 6.256758688933748
+sent_score --> 0.5423
+final_score --> 0.6429218750387443
+-----------------------------------------
+docnum --> 4585
+handle --> Southwest
+text --> @SouthwestAir I enjoyed a call from my good friend he's Flight Booking Problems his flights elsewhere as I tweet one at a time I will tell as many as I can
+pert_score --> 4.796953359009574
+sent_score --> 0.7717
+final_score --> 0.6352885887291474
+-----------------------------------------
+docnum --> 2392
+handle --> United
+text --> @united thank you for taking care of my mom and reFlight Booking Problems her flight in phl.
+pert_score --> 5.027459781127982
+sent_score --> 0.7003
+final_score --> 0.6224230038269507
+-----------------------------------------
+docnum --> 375
+handle --> Virgin America
+text --> @VirginAmerica  Flight Booking Problems last second flight for next week from SFO- to SAN any chance you want to gift me a promo code since I love you guys
+pert_score --> 4.4782913311719525
+sent_score --> 0.7717
+final_score --> 0.6135919518422916
+-----------------------------------------
+docnum --> 8121
+handle --> Delta
+text --> @JetBlue haha no need to apologize 😁 I'll be Flight Booking Problems sooner than Late Flightr. I love JetBlue
+pert_score --> 4.455191389819322
+sent_score --> 0.7717
+final_score --> 0.612019153718095
+-----------------------------------------
+docnum --> 1146
+handle --> United
+text --> @united b) I contacted you directly, and the phone service was Laissez Faire at best.  The problem isn't a Cancelled Flightled a flight.
+pert_score --> 4.723541014073794
+sent_score --> 0.7219
+final_score --> 0.6103701864975019
+-----------------------------------------
+docnum --> 4316
+handle --> United
+text --> @united even though technically after I land I will be silver?
+pert_score --> 6.421383760382079
+sent_score --> 0.4215
+final_score --> 0.6058106482393818
+-----------------------------------------
+docnum --> 11486
+handle --> US Airways
+text --> @USAirways Is there a way to have someone contact me when you have an agent available? Need help Flight Booking Problems an award flight.
+pert_score --> 5.037449797877288
+sent_score --> 0.5423
+final_score --> 0.5599031908180839
+-----------------------------------------
+docnum --> 10121
+handle --> US Airways
+text --> @USAirways Thanks for Cancelled Flighting my flight tomorrow and not reFlight Booking Problems me on another one. #usairwaysfail
+pert_score --> 5.304883189236472
+sent_score --> 0.4867
+final_score --> 0.5558718403491077
+-----------------------------------------
+docnum --> 2936
+handle --> United
+text --> @united so going forward, I shouldn't be Flight Booking Problems Star Alliance flights through the United App?
+pert_score --> 5.304883189236472
+sent_score --> 0.4404
+final_score --> 0.5373518403491078
+-----------------------------------------
+docnum --> 9701
+handle --> US Airways
+text --> @USAirways we flew out, through and into good weather. when we landed,  another technical issue with gate. improve service or lose customers
+pert_score --> 4.730448330967948
+sent_score --> 0.4767
+final_score --> 0.5127604827155103
+-----------------------------------------
+docnum --> 11434
+handle --> US Airways
+text --> @USAirways would you consider honoring the original fare price if I were to try Flight Booking Problems the ticket again?
+pert_score --> 4.723541014073794
+sent_score --> 0.4404
+final_score --> 0.4977701864975018
+-----------------------------------------
+docnum --> 13118
+handle --> American
+text --> @AmericanAir  CXL flight. rebooked 2 PAX no problems. Thank you and everyone at AA for helping us all out!
+pert_score --> 4.870626436613785
+sent_score --> 0.3899
+final_score --> 0.48758474338040136
+-----------------------------------------
+docnum --> 10745
+handle --> US Airways
+text --> @USAirways technical issues = inefficient computer triage system. Personality/ compassion of operators = not. Sad example of sad company.
+pert_score --> 5.024467701505074
+sent_score --> 0.3515
+final_score --> 0.4826992830838319
+-----------------------------------------
+docnum --> 8795
+handle --> Delta
+text --> @JetBlue so technically I could drive to JFK now and put in. Request for tomorrow's flight?
+pert_score --> 7.067820798338801
+sent_score --> 0.0
+final_score --> 0.48122439464630695
+-----------------------------------------
+docnum --> 1469
+handle --> United
+text --> @united Hi.  My relative's Flight Booking Problems number is MY8YB4.  Her name is Clarita Jaramillo Mejia.  Thank you
+pert_score --> 4.455191389819322
+sent_score --> 0.4404
+final_score --> 0.47949915371809493
+-----------------------------------------
+docnum --> 3667
+handle --> United
+text --> “@united: @ItsAaronChriz Sorry to hear about your flight. Do you need help reFlight Booking Problems?” 👎
+pert_score --> 5.027459781127982
+sent_score --> 0.34
+final_score --> 0.4783030038269506
+-----------------------------------------
+docnum --> 4074
+handle --> United
+text --> @united IT-problems with the link? #3thparty
+pert_score --> 4.513644692642743
+sent_score --> 0.4215
+final_score --> 0.47591904455982226
+-----------------------------------------
+docnum --> 2513
+handle --> United
+text --> @united My flight was Cancelled Flighted and I'm needing some help reFlight Booking Problems.
+pert_score --> 5.604180507787859
+sent_score --> 0.2023
+final_score --> 0.46248999863136164
+-----------------------------------------
+docnum --> 6411
+handle --> Southwest
+text --> @SouthwestAir I'm Flight Booking Problems a flight to Vegas. Any good promo codes??
+pert_score --> 5.941580438292076
+sent_score --> 0.1431
+final_score --> 0.46178243694626053
+-----------------------------------------
+docnum --> 10492
+handle --> US Airways
+text --> @USAirways @PHLAirport Cancelled Flighted flight due to weather no problem, but wait for luggage for 4 hours?? IT MUST BE DELIVERED!!
+pert_score --> 5.037449797877288
+sent_score --> 0.267
+final_score --> 0.44978319081808393
+-----------------------------------------
+docnum --> 12305
+handle --> American
+text --> @AmericanAir Is it possible to change the FF number on a passenger on a Flight Booking Problems, it won't let me change it?
+pert_score --> 4.870626436613785
+sent_score --> 0.2808
+final_score --> 0.44394474338040135
+-----------------------------------------
+docnum --> 3268
+handle --> United
+text --> @united what is the problem with your flights to ny today
+pert_score --> 6.2408998684268315
+sent_score --> 0.0258
+final_score --> 0.435242100732633
+-----------------------------------------
+docnum --> 5121
+handle --> Southwest
+text --> @SouthwestAir Cancelled Flightled all flights Fort Lauderdale to Philly. USAir flights got to Philly with no problem. WTF is wrong with SW @USAirways
+pert_score --> 4.796953359009574
+sent_score --> 0.2413
+final_score --> 0.4231285887291473
+-----------------------------------------
+docnum --> 5942
+handle --> Southwest
+text --> @SouthwestAir there is a good chance myself nor anyone else in this airport will ever be Flight Booking Problems southwest again..
+pert_score --> 4.455191389819322
+sent_score --> 0.296
+final_score --> 0.42173915371809495
+-----------------------------------------
+docnum --> 5069
+handle --> Southwest
+text --> @SouthwestAir Thx to customer service rep ALEX for his patient help in reFlight Booking Problems a Cancelled Flighted flight and getting us where we have to be tmrw!
+pert_score --> 4.796953359009574
+sent_score --> 0.2003
+final_score --> 0.40672858872914736
+-----------------------------------------
+docnum --> 1578
+handle --> United
+text --> @united is it possible to add a Known Traveler Number to my ticket after Flight Booking Problems?
+pert_score --> 5.027459781127982
+sent_score --> 0.1027
+final_score --> 0.3833830038269506
+-----------------------------------------
+docnum --> 4173
+handle --> United
+text --> @united No, I do not. I was only given a Flight Booking Problems reference number.
+pert_score --> 5.027459781127982
+sent_score --> 0.1027
+final_score --> 0.3833830038269506
+-----------------------------------------
+docnum --> 1431
+handle --> United
+text --> @united I just booked a flight for (2). When I view my reservation it has MI connected to First name. Is this a problem? can it be changed?
+pert_score --> 4.723541014073794
+sent_score --> 0.1179
+final_score --> 0.3687701864975018
+-----------------------------------------
+docnum --> 5885
+handle --> Southwest
+text --> @SouthwestAir when can I start Flight Booking Problems for next years super bowl time? 😩#help
+pert_score --> 5.027459781127982
+sent_score --> 0.0258
+final_score --> 0.3526230038269506
+-----------------------------------------
+docnum --> 4089
+handle --> United
+text --> @united also why can't I pre-select seats on SFO-&gt;YYZ flight? I'm a Canadian Flight Booking Problems on http://t.co/aZltJhf7lv.
+pert_score --> 4.914100964443825
+sent_score --> 0.0258
+final_score --> 0.34490477928601765
+-----------------------------------------
+docnum --> 2487
+handle --> United
+text --> @united your website won't allow me to post the required document, i keep getting **were having technical difficulties**
+pert_score --> 5.024467701505074
+sent_score --> -0.017
+final_score --> 0.33529928308383194
+-----------------------------------------
+docnum --> 3668
+handle --> United
+text --> @united now we are trying to get to San Juan from Chicago O'Hare. Having lots of problems. May get a standby flight.
+pert_score --> 4.723541014073794
+sent_score --> 0.0258
+final_score --> 0.33193018649750183
+-----------------------------------------
+docnum --> 13128
+handle --> American
+text --> @AmericanAir you keep returning my call and hanging up when I answer? Help reFlight Booking Problems a flight!
+pert_score --> 4.870626436613785
+sent_score --> 0.0
+final_score --> 0.3316247433804013
+-----------------------------------------
+docnum --> 6058
+handle --> Southwest
+text --> @SouthwestAir my first flight ever and flight #4251 is already having technical issues. Faaaannntastic.😭
+pert_score --> 7.6445415249986794
+sent_score --> -0.4767
+final_score --> 0.32981138945071803
+-----------------------------------------
+docnum --> 8268
+handle --> Delta
+text --> @JetBlue not to get into semantics here but "by" means "within the extent or period of; during" and it is still technically 2/19 #dictionary
+pert_score --> 4.730448330967948
+sent_score --> 0.0
+final_score --> 0.32208048271551026
+-----------------------------------------
+docnum --> 3349
+handle --> United
+text --> @united problem is on laptop not phone
+pert_score --> 4.513644692642743
+sent_score --> 0.0258
+final_score --> 0.3176390445598222
+-----------------------------------------
+docnum --> 3104
+handle --> United
+text --> @united has happened on other airlines and they've given out flight vouchers and been more transparent about the problems.
+pert_score --> 4.455191389819322
+sent_score --> 0.0258
+final_score --> 0.31365915371809494
+-----------------------------------------
+docnum --> 3766
+handle --> United
+text --> @united when southwest did this to us -- a mechanical problem at least they gave us round trip vouchers. Will you step up to the pLate Flight too?
+pert_score --> 4.455191389819322
+sent_score --> 0.0258
+final_score --> 0.31365915371809494
+-----------------------------------------
+docnum --> 1323
+handle --> United
+text --> @united very poor customer service. I WILL think again befor Flight Booking Problems another United flight.
+pert_score --> 5.304883189236472
+sent_score --> -0.1263
+final_score --> 0.3106718403491077
+-----------------------------------------
+docnum --> 13374
+handle --> American
+text --> @AmericanAir it's more than technical problems. #frustrated #answerthephone Res. on hold and can't get thru to use a credit to pay for it
+pert_score --> 8.273133361921733
+sent_score --> -0.6326
+final_score --> 0.3102501155126469
+-----------------------------------------
+docnum --> 7017
+handle --> Delta
+text --> @JetBlue when can we start Flight Booking Problems flights for November?
+pert_score --> 6.537340802656151
+sent_score --> -0.4019
+final_score --> 0.2843457773131738
+-----------------------------------------
+docnum --> 7992
+handle --> Delta
+text --> @JetBlue When will you release November flights for Flight Booking Problems?
+pert_score --> 6.537340802656151
+sent_score --> -0.4019
+final_score --> 0.2843457773131738
+-----------------------------------------
+docnum --> 5497
+handle --> Southwest
+text --> @SouthwestAir can you help me with reFlight Booking Problems? My flight was Cancelled Flighted. FWHEI6
+pert_score --> 5.604180507787859
+sent_score --> -0.25
+final_score --> 0.2815699986313617
+-----------------------------------------
+docnum --> 5601
+handle --> Southwest
+text --> @SouthwestAir can one use a companion pass w/ a points Flight Booking Problems or is it only cash fares? Thx!
+pert_score --> 4.870626436613785
+sent_score --> -0.126
+final_score --> 0.2812247433804013
+-----------------------------------------
+docnum --> 9201
+handle --> US Airways
+text --> @USAirways Well, that's a problem considering I need to book a flight tonight for this weekend... is there anything you can do?
+pert_score --> 5.027459781127982
+sent_score --> -0.1531
+final_score --> 0.2810630038269506
+-----------------------------------------
+docnum --> 10150
+handle --> US Airways
+text --> @USAirways my in-laws flight Cancelled Flighted 4 tonight. U auto rebooked 4 flight on Tuesday that doesn't work. Can you help reFlight Booking Problems them?
+pert_score --> 5.124329456982238
+sent_score --> -0.25
+final_score --> 0.24889853764884737
+-----------------------------------------
+docnum --> 11783
+handle --> US Airways
+text --> @USAirways Flight Booking Problems a flight using credit from a previously Cancelled Flightled flight. Can't get thru on the phone and can't book online. Help please.
+pert_score --> 5.124329456982238
+sent_score --> -0.2635
+final_score --> 0.24349853764884738
+-----------------------------------------
+docnum --> 5639
+handle --> Southwest
+text --> @SouthwestAir Please explain to reps, ignoring a technical issue and passing the buck is not a good business model. Lucky limited to 140
+pert_score --> 4.730448330967948
+sent_score --> -0.2278
+final_score --> 0.23096048271551026
+-----------------------------------------
+docnum --> 4128
+handle --> United
+text --> @united No. The entire problem here is that I was never sent anything via email and only given a Flight Booking Problems number over the phone.
+pert_score --> 5.21906676566087
+sent_score --> -0.3182
+final_score --> 0.2280688856868182
+-----------------------------------------
+docnum --> 12779
+handle --> American
+text --> @AmericanAir I need assistance reFlight Booking Problems a flight from dfw to lit
+pert_score --> 5.56720751302475
+sent_score --> -0.4019
+final_score --> 0.21829263047351016
+-----------------------------------------
+docnum --> 3508
+handle --> United
+text --> @united I live abroad and am Flight Booking Problems flights for when I come visit the states :(
+pert_score --> 5.604180507787859
+sent_score --> -0.4215
+final_score --> 0.21296999863136165
+-----------------------------------------
+docnum --> 5637
+handle --> Southwest
+text --> @SouthwestAir huge problem with someone whose ticket was Cancelled Flighted mid trip. Can you DM?
+pert_score --> 5.027459781127982
+sent_score --> -0.34
+final_score --> 0.2063030038269506
+-----------------------------------------
+docnum --> 646
+handle --> United
+text --> @united Yeah sorry but there's always a problem with United. And you have an international reputation for having problems.
+pert_score --> 4.533562974731595
+sent_score --> -0.2617
+final_score --> 0.20399521409412263
+-----------------------------------------
+docnum --> 121
+handle --> Virgin America
+text --> @VirginAmerica And now the flight Flight Booking Problems site is totally down. Folks, what is the problem?
+pert_score --> 6.820645817403275
+sent_score --> -0.6597
+final_score --> 0.2005150728558665
+-----------------------------------------
+docnum --> 9053
+handle --> US Airways
+text --> @USAirways to my legal last name. So it's not technically a name change, I just used the wrong name
+pert_score --> 5.185622998333013
+sent_score --> -0.3818
+final_score --> 0.20035181087886292
+-----------------------------------------
+docnum --> 3814
+handle --> United
+text --> @united (2/2) It suggests that if can't confirm cert at time of Flight Booking Problems, I should assume that it may never clear. Didn't used to be that way
+pert_score --> 4.455191389819322
+sent_score --> -0.2695
+final_score --> 0.19553915371809494
+-----------------------------------------
+docnum --> 3261
+handle --> United
+text --> @united And there is no direct phone number for status match desk? I really regret Flight Booking Problems with @united now.
+pert_score --> 4.455191389819322
+sent_score --> -0.2716
+final_score --> 0.19469915371809493
+-----------------------------------------
+docnum --> 2027
+handle --> United
+text --> @united it is too Late Flight for reFlight Booking Problems now - it is morning already and I no longer need a hotel room
+pert_score --> 4.455191389819322
+sent_score --> -0.2732
+final_score --> 0.19405915371809496
+-----------------------------------------
+docnum --> 12208
+handle --> American
+text --> @AmericanAir When Flight Booking Problems an int'l flight online, do I have to provide a passport number when Flight Booking Problems or just when I arrive at airport?
+pert_score --> 6.464983256997819
+sent_score --> -0.6249
+final_score --> 0.19021919285368838
+-----------------------------------------
+docnum --> 7297
+handle --> Delta
+text --> @JetBlue had a potentially stressful situation in reFlight Booking Problems a flight which she diffused and helped make awesome!
+pert_score --> 4.455191389819322
+sent_score --> -0.2942
+final_score --> 0.18565915371809494
+-----------------------------------------
+docnum --> 12333
+handle --> American
+text --> @AmericanAir As I already have a booked flight that I can't use &amp; can't change w/o a $200 fee, Flight Booking Problems a different type of ticket...1/2
+pert_score --> 5.037449797877288
+sent_score --> -0.4019
+final_score --> 0.1822231908180839
+-----------------------------------------
+docnum --> 86
+handle --> Virgin America
+text --> @VirginAmerica Can't bring up my reservation online using Flight Booking Problems code
+pert_score --> 5.027459781127982
+sent_score --> -0.4019
+final_score --> 0.1815430038269506
+-----------------------------------------
+docnum --> 9380
+handle --> US Airways
+text --> @USAirways I have a flight voucher/confirmation code but there is no where for me to enter it on your checkout page while Flight Booking Problems. Pls help
+pert_score --> 4.579447355311666
+sent_score --> -0.3291
+final_score --> 0.18015932885288324
+-----------------------------------------
+docnum --> 8416
+handle --> Delta
+text --> @JetBlue tried them not helpful. Really dissatisfied with Flight Booking Problems my whole trip with jet blue this time around besides the flights.
+pert_score --> 4.796953359009574
+sent_score --> -0.3881
+final_score --> 0.17136858872914731
+-----------------------------------------
+docnum --> 343
+handle --> Virgin America
+text --> @VirginAmerica Flight Booking Problems flight to uphold my status match.  Do taxes on ticket count as earned status points?  #statusmatch #virginamerica
+pert_score --> 4.796953359009574
+sent_score --> -0.4019
+final_score --> 0.16584858872914732
+-----------------------------------------
+docnum --> 6892
+handle --> Delta
+text --> @JetBlue not one of my four flights this trip has been on time. What the he'll is your companies problem?
+pert_score --> 4.723541014073794
+sent_score --> -0.4019
+final_score --> 0.16085018649750182
+-----------------------------------------
+docnum --> 11045
+handle --> US Airways
+text --> @USAirways problem with flight in Gainesville US Airways  5137 to CLT will miss connecting flight 5547 to IAD. When can I get another flight
+pert_score --> 5.357680626361781
+sent_score --> -0.5106
+final_score --> 0.16054664211961595
+-----------------------------------------
+docnum --> 7183
+handle --> Delta
+text --> @JetBlue absolutely, my girlfriend and I will be Flight Booking Problems our Mexico flights in the next day or two, will send a Tweet when it's done!
+pert_score --> 5.037449797877288
+sent_score --> -0.4574
+final_score --> 0.16002319081808392
+-----------------------------------------
+docnum --> 10165
+handle --> US Airways
+text --> @USAirways been on hold 2 hours for a Cancelled Flighted flight. I understand the delay. I don't understand you auto-reFlight Booking Problems me on TUESDAY. HELP!
+pert_score --> 4.796953359009574
+sent_score --> -0.4327
+final_score --> 0.15352858872914732
+-----------------------------------------
+docnum --> 7360
+handle --> Delta
+text --> @JetBlue why is flight 1106 delayed out to NY? Same problem?
+pert_score --> 5.56720751302475
+sent_score --> -0.6072
+final_score --> 0.1361726304735102
+-----------------------------------------
+docnum --> 9446
+handle --> US Airways
+text --> @USAirways flights &amp; "customer relations" are extremely disappointing. Faced too many problems to type. apology=$25 towards a flight. A JOKE
+pert_score --> 4.914100964443825
+sent_score --> -0.504
+final_score --> 0.13298477928601765
+-----------------------------------------
+docnum --> 7808
+handle --> Delta
+text --> @JetBlue I guess I have to redo the Flight Booking Problems. Ugh!
+pert_score --> 5.998497486600996
+sent_score --> -0.6996
+final_score --> 0.1285777293311428
+-----------------------------------------
+docnum --> 7644
+handle --> Delta
+text --> @JetBlue my flight 475 Cancelled Flighted due to lavatory problems. Can't confirm if they are gonna get a flight from Boston Logan Int
+pert_score --> 5.238137991520906
+sent_score --> -0.5719
+final_score --> 0.12788738198171815
+-----------------------------------------
+docnum --> 5880
+handle --> Southwest
+text --> @SouthwestAir Flight Booking Problems all my Late Flight summer travel! Did the AUS-CUN direct flight disappear?
+pert_score --> 5.357680626361781
+sent_score --> -0.5983
+final_score --> 0.12546664211961595
+-----------------------------------------
+docnum --> 2561
+handle --> United
+text --> @united typically once you get the problem fixed - then the crew expires - and the delay turns into a Cancelled Flight...
+pert_score --> 4.723541014073794
+sent_score --> -0.4939
+final_score --> 0.12405018649750182
+-----------------------------------------
+docnum --> 8359
+handle --> Delta
+text --> @JetBlue Hey guys! Your Flight Booking Problems system ran my first and middle names together at time of Flight Booking Problems. Is that going to be a #TSAnightmare ?
+pert_score --> 5.795674650979987
+sent_score --> -0.69
+final_score --> 0.11860819749990176
+-----------------------------------------
+docnum --> 11542
+handle --> US Airways
+text --> @USAirways stuck in cae need reFlight Booking Problems for next flight possibly dm for more info
+pert_score --> 4.870626436613785
+sent_score --> -0.5719
+final_score --> 0.10286474338040133
+-----------------------------------------
+docnum --> 157
+handle --> Virgin America
+text --> @VirginAmerica having problems Flight Booking Problems on the web site. keeps giving me an error and to contact by phone.  phone is 30 minute wait.
+pert_score --> 5.440825327148209
+sent_score --> -0.6908
+final_score --> 0.09412768806936633
+-----------------------------------------
+docnum --> 8232
+handle --> Delta
+text --> @JetBlue here in Austin I saw the water bottles &amp; snacks @ the desk for your waiting passengers! Im so Flight Booking Problems my next flight with you!
+pert_score --> 4.579447355311666
+sent_score --> -0.5496
+final_score --> 0.09195932885288324
+-----------------------------------------
+docnum --> 7691
+handle --> Delta
+text --> @JetBlue can you let me know status of flight #454 PBI-JFK delayed 2.5hours now on board problem with hatch..
+pert_score --> 4.455191389819322
+sent_score --> -0.5574
+final_score --> 0.08037915371809493
+-----------------------------------------
+docnum --> 12976
+handle --> American
+text --> @AmericanAir your seat assignment process when Flight Booking Problems is misleading. I'm not paying extra to select a seat.
+pert_score --> 5.027459781127982
+sent_score --> -0.6597
+final_score --> 0.07842300382695061
+-----------------------------------------
+docnum --> 11020
+handle --> US Airways
+text --> @USAirways 1st a Late Flight plane, then missing flight crew, then maintenance problems, gates switched 4 times. You call this customer service??
+pert_score --> 4.796953359009574
+sent_score --> -0.644
+final_score --> 0.06900858872914734
+-----------------------------------------
+docnum --> 6836
+handle --> Delta
+text --> @JetBlue A month ago I had a flight booked but then had to Cancelled Flight it... I'm now Flight Booking Problems a separate flight for a different occasion.
+pert_score --> 5.12891853706768
+sent_score --> -0.7227
+final_score --> 0.06013099283823459
+-----------------------------------------
+docnum --> 305
+handle --> Virgin America
+text --> @VirginAmerica The Flight Booking Problems section of your website seems to be broken on Chrome. Might wanna look into that.
+pert_score --> 4.870626436613785
+sent_score --> -0.7003
+final_score --> 0.051504743380401286
+-----------------------------------------
+docnum --> 13135
+handle --> American
+text --> @AmericanAir your team rebooked my Cancelled Flightled AA flight on a different airline. New airline has no such Flight Booking Problems. Flight is this evening.
+pert_score --> 4.91226269975699
+sent_score --> -0.7096
+final_score --> 0.05061961796170533
+-----------------------------------------
+docnum --> 9673
+handle --> US Airways
+text --> @USAirways your customer service is horrendous. Between the way employees speak customers and their lack of care for problems with flights.
+pert_score --> 4.723541014073794
+sent_score --> -0.6808
+final_score --> 0.04929018649750183
+-----------------------------------------
+docnum --> 11665
+handle --> US Airways
+text --> @USAirways My Flight Booking Problems C68LD9 just times out when I select it under Manage My Flight Booking Problems for months now. I have emailed but no response. Help?
+pert_score --> 5.48795931354185
+sent_score --> -0.8119
+final_score --> 0.04889688432896566
+-----------------------------------------
+docnum --> 8938
+handle --> Delta
+text --> @JetBlue Got flight reschedule to flight form PIT to FLL and our flight had mechanical problems so we were delayed an hour Missed my connect
+pert_score --> 4.91226269975699
+sent_score --> -0.7239
+final_score --> 0.044899617961705385
+-----------------------------------------
+docnum --> 11749
+handle --> US Airways
+text --> @USAirways after missing my flight and reFlight Booking Problems 2x, I just walked onto another flight and my phone was still on the seat!!
+pert_score --> 4.579447355311666
+sent_score --> -0.6688
+final_score --> 0.04427932885288327
+-----------------------------------------
+docnum --> 11807
+handle --> US Airways
+text --> @USAirways Travelling from pwm to atl on Sunday That flight got Cancelled Flightled and my new flight is Cancelled Flightled and got disconnected when reFlight Booking Problems
+pert_score --> 4.579447355311666
+sent_score --> -0.6908
+final_score --> 0.03547932885288324
+-----------------------------------------
+docnum --> 4165
+handle --> United
+text --> @united Your website Flight Booking Problems experience is an obnoxious upsell-laden disaster for anyone with half a brain.
+pert_score --> 4.870626436613785
+sent_score --> -0.7906
+final_score --> 0.0153847433804013
+-----------------------------------------
+docnum --> 11902
+handle --> American
+text --> .@AmericanAir just disappointed with the Flight Booking Problems process and add’l fees to sit together on a more crowded flight. Not impressed so far :-/.
+pert_score --> 4.914100964443825
+sent_score --> -0.8102
+final_score --> 0.010504779286017618
+-----------------------------------------
+docnum --> 12063
+handle --> American
+text --> .@AmericanAir just disappointed with the Flight Booking Problems process and add’l fees to sit together on a more crowded flight. Not impressed so far :-/.
+pert_score --> 4.914100964443825
+sent_score --> -0.8102
+final_score --> 0.010504779286017618
+-----------------------------------------
+docnum --> 5980
+handle --> Southwest
+text --> @SouthwestAir having trouble reFlight Booking Problems a Cancelled Flighted flight. no one picking up phones and your site isn't working.
+pert_score --> 4.914100964443825
+sent_score --> -0.8225
+final_score --> 0.005584779286017638
+-----------------------------------------
