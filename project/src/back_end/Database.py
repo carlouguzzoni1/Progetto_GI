@@ -7,8 +7,8 @@ from whoosh.fields import *
 from whoosh.analysis import StemmingAnalyzer
 import random
 import copy
-from project.src.back_end.OdsPrinter import OdsPrinter
-from project.src.back_end.CsvPrinter import CsvPrinter
+from project.src.printers.OdsPrinter import OdsPrinter
+from project.src.printers.CsvPrinter import CsvPrinter
 
 class Database:
     """Classe che processa il file csv fornito come parametro al costruttore."""
@@ -50,10 +50,10 @@ class Database:
         per poi essere memorizzati in oggetti di classe Tweet.
 
         :param *args: list, lista di stringhe
-        """
+<        """
         for selected_field in args:
             if selected_field not in self._fields:
-                raise Exception(selected_field + " non è presente tra i campi del file.")
+                raise Exception(selected_field + " does not appear as a field.")
         self._tweets.clear()
         for row in self._raw_data:
             filtered = dict(filter(lambda elem : (elem[0] in args), row.items()))

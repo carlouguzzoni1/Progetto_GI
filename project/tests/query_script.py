@@ -9,17 +9,11 @@ La procedura è ripetuta per una seconda query, differente dalla prima.
 from project.src.front_end.Results import Results
 from project.src.front_end.Searcher import Searcher
 
-# Creazione del Searcher.
-s = Searcher("handle", "text")
 
-# Estrazione dei risultati con inserimento di una query.
-res = s.submit_query("american airline")
-# Elaborazione dei risultati in un oggetto Results, tramite lo strumento
-# di sentiment analysis Vader, impostato per il sentiment complessivo.
-r = Results("Vader", "compound", res)
-r.printResults(s, "output.txt") 
-
-# Si ripete la procedura appena vista.
-res2 = s.submit_query("service on board")
-r2 = Results("Vader", "compound", res2)
-r2.printResults(s, "output2.txt")
+query = input("Insert query > ")
+sentiment = input("Insert sentiment > " )
+s = Searcher("handle", "text", scoring_fun = "TF_IDF")
+res = s.submit_query(query, results_threshold = 100, expand=True)
+r = Results("Vader", sentiment, res, ranking_fun = "balanced_weighted_avg")
+r.printResults(s, "output.txt")
+r.printResults(s, "output.ods")

@@ -1,5 +1,7 @@
 __all__ = [
-    "benchmarking_script",
+    "benchmark",
     "indexing_script",
-    "query_script"
+    "query_script",
+    "piechart",
+    "wcl"
     ]

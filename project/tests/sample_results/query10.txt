@@ -1,0 +1,63 @@
+{'docnum': 50, 'handle': 'United', 'r1': '1', 'r10': '2', 'r2': '0', 'r3': '1', 'r4': '0', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '0', 'text': "@united on final. Pls don't let my connection leave!!! Conf# NPBHD0 http://t.co/eWXwXiDTfX", 'pert_score': 7.440559666641136, 'sent_score': 0.5826, 'final_score': 0.83304}
+
+-----------------
+{'docnum': 78, 'handle': 'United', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '3', 'r9': '1', 'text': "@united - after having to now TAG MY OWN bags at the airport I was hoping they would actually arrive WITH me - here's hoping they arrive", 'pert_score': 3.6169915967440898, 'sent_score': 0.8126, 'final_score': 0.6167109300479459}
+
+-----------------
+{'docnum': 23, 'handle': 'United', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '2', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '0', 'text': '@united yr team have me on hold for over an hour unhelpful Pls can you answer my question.', 'pert_score': 3.9873990561511508, 'sent_score': 0.4767, 'final_score': 0.5122202524647317}
+
+-----------------
+{'docnum': 59, 'handle': 'United', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '1', 'r5': '2', 'r6': '1', 'r7': '2', 'r8': '0', 'r9': '2', 'text': "@united I'm counting on you, please don't let me down! #delayed #again #needtocatchmynextflight #alreadyrebookedonce", 'pert_score': 3.6169915967440898, 'sent_score': 0.5411, 'final_score': 0.5081109300479458}
+
+-----------------
+{'docnum': 9, 'handle': 'United', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '2', 'r5': '0', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '0', 'text': '@united I believe just customer service. At last post he was at Narita in Tokyo. They sent him to a motel to rest. Said standby maybe 2days', 'pert_score': 3.9873990561511508, 'sent_score': 0.4215, 'final_score': 0.4901402524647316}
+
+-----------------
+{'docnum': 10, 'handle': 'United', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '2', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '0', 'text': '@united customer service 👎', 'pert_score': 3.9873990561511508, 'sent_score': 0.4215, 'final_score': 0.4901402524647316}
+
+-----------------
+{'docnum': 40, 'handle': 'United', 'r1': '2', 'r10': '1', 'r2': '0', 'r3': '0', 'r4': '1', 'r5': '1', 'r6': '0', 'r7': '2', 'r8': '0', 'r9': '2', 'text': '@united It appears there are six flights to Calgary tomorrow is this correct?', 'pert_score': 3.9873990561511508, 'sent_score': 0.4215, 'final_score': 0.4901402524647316}
+
+-----------------
+{'docnum': 42, 'handle': 'United', 'r1': '2', 'r10': '1', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '2', 'r8': '0', 'r9': '1', 'text': "@united I was not looking for the fare to be returned on the companion flight.  don't understand why an additional $200 fee was necessary.", 'pert_score': 3.9873990561511508, 'sent_score': 0.4215, 'final_score': 0.4901402524647316}
+
+-----------------
+{'docnum': 88, 'handle': 'United', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '1', 'r5': '1', 'r6': '2', 'r7': '0', 'r8': '0', 'r9': '0', 'text': "@united how does that help me with my customers that I couldn't meet with (and subsequently lost)?", 'pert_score': 3.6169915967440898, 'sent_score': 0.4939, 'final_score': 0.4892309300479458}
+
+-----------------
+{'docnum': 73, 'handle': 'United', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '2', 'r9': '0', 'text': '@united WHERE IS MY FUCKING BAG?!?! Where the fuck is my fucking bag??? TELL ME NOW OR GIVE ME A NUMBER TO CALL A HUMAN. SAN68059M', 'pert_score': 3.6169915967440898, 'sent_score': 0.4361, 'final_score': 0.4661109300479458}
+
+-----------------
+{'docnum': 53, 'handle': 'United', 'r1': '0', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '0', 'r6': '1', 'r7': '0', 'r8': '0', 'r9': '1', 'text': '@united UA1023 sitting on Tarmac at ORD when there are visibly gates open. Reassign our gate.', 'pert_score': 3.6169915967440898, 'sent_score': 0.4215, 'final_score': 0.46027093004794584}
+
+-----------------
+{'docnum': 63, 'handle': 'United', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '0', 'r5': '0', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '0', 'text': "@united They couldn't get me first class on any of their flights so I just rebooked myself.", 'pert_score': 3.6169915967440898, 'sent_score': 0.4215, 'final_score': 0.46027093004794584}
+
+-----------------
+{'docnum': 80, 'handle': 'United', 'r1': '0', 'r10': '0', 'r2': '0', 'r3': '0', 'r4': '0', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '1', 'text': "@united It was last night's 1235/ORD-LGA.", 'pert_score': 3.6169915967440898, 'sent_score': 0.4215, 'final_score': 0.46027093004794584}
+
+-----------------
+{'docnum': 13, 'handle': 'United', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '2', 'r5': '0', 'r6': '2', 'r7': '0', 'r8': '0', 'r9': '1', 'text': "@united doesn't help the 100 or more passengers that just arrived an hour Late Flight.", 'pert_score': 3.9873990561511508, 'sent_score': 0.1386, 'final_score': 0.3769802524647316}
+
+-----------------
+{'docnum': 86, 'handle': 'United', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '0', 'r5': '1', 'r6': '1', 'r7': '2', 'r8': '0', 'r9': '1', 'text': "@united My flight was Cancelled Flighted and I'm needing some help reFlight Booking Problems.", 'pert_score': 3.6169915967440898, 'sent_score': 0.2023, 'final_score': 0.3725909300479458}
+
+-----------------
+{'docnum': 89, 'handle': 'United', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '1', 'text': "@united involuntarily bumped your passenger and can't guarantee them another flight for three days!", 'pert_score': 2.956660134656323, 'sent_score': 0.3296, 'final_score': 0.3702623983509324}
+
+-----------------
+{'docnum': 1, 'handle': 'United', 'r1': '2', 'r10': '1', 'r2': '0', 'r3': '1', 'r4': '2', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '0', 'text': '@united Also, your phone customer service is almost useless. http://t.co/Mb3bJwGOAp', 'pert_score': 3.9873990561511508, 'sent_score': 0.0754, 'final_score': 0.35170025246473163}
+
+-----------------
+{'docnum': 26, 'handle': 'United', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '2', 'r5': '0', 'r6': '1', 'r7': '0', 'r8': '0', 'r9': '1', 'text': '@united rude cust ser agents busy chatting, then yelled bc I took pic. Put me stdby when seat. Diff agent gave me seat 30min Late Flightr. Platinum', 'pert_score': 3.9873990561511508, 'sent_score': -0.0516, 'final_score': 0.3009002524647316}
+
+-----------------
+{'docnum': 68, 'handle': 'US Airways', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '0', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '0', 'text': "@USAirways that link leads to a website that won't open on a cell phone.  Good job, shocking that your airline is folding.", 'pert_score': 3.2746820036187643, 'sent_score': 0.0516, 'final_score': 0.2847073941478148}
+
+-----------------
+{'docnum': 16, 'handle': 'Southwest', 'r1': '1', 'r10': '2', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '0', 'text': '@SouthwestAir wifi stays connected about the lifetime of a higgs boson', 'pert_score': 3.379918422989986, 'sent_score': 0.0, 'final_score': 0.2725535637979047}
+
+-----------------
+{'docnum': 79, 'handle': 'United', 'r1': '2', 'r10': '1', 'r2': '0', 'r3': '1', 'r4': '2', 'r5': '2', 'r6': '0', 'r7': '0', 'r8': '2', 'r9': '0', 'text': "@united Lost bag process is broken. Agent promised they'd call &amp; hold my bag when found. Now they're waking me at 3am w/ delivery. #fail", 'pert_score': 3.6169915967440898, 'sent_score': -0.5574, 'final_score': 0.06871093004794579}
+
+-----------------

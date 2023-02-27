@@ -1,0 +1,21 @@
+{'docnum': 73, 'handle': 'United', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '2', 'r9': '0', 'text': '@united WHERE IS MY FUCKING BAG?!?! Where the fuck is my fucking bag??? TELL ME NOW OR GIVE ME A NUMBER TO CALL A HUMAN. SAN68059M', 'pert_score': 3.8134107167600364, 'sent_score': 0.4361, 'final_score': 0.77444}
+
+-----------------
+{'docnum': 78, 'handle': 'United', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '3', 'r9': '1', 'text': "@united - after having to now TAG MY OWN bags at the airport I was hoping they would actually arrive WITH me - here's hoping they arrive", 'pert_score': 1.9067053583800182, 'sent_score': 0.8126, 'final_score': 0.62504}
+
+-----------------
+{'docnum': 76, 'handle': 'US Airways', 'r1': '3', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '2', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '3', 'r9': '0', 'text': '@USAirways  thanks! Now I just need to locate where my luggage is!', 'pert_score': 2.253278948659991, 'sent_score': 0.5399, 'final_score': 0.5704897030959881}
+
+-----------------
+{'docnum': 35, 'handle': 'Southwest', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '2', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '2', 'r9': '0', 'text': '@SouthwestAir thanks for losing my luggage', 'pert_score': 2.253278948659991, 'sent_score': 0.0772, 'final_score': 0.38540970309598804}
+
+-----------------
+{'docnum': 79, 'handle': 'United', 'r1': '2', 'r10': '1', 'r2': '0', 'r3': '1', 'r4': '2', 'r5': '2', 'r6': '0', 'r7': '0', 'r8': '2', 'r9': '0', 'text': "@united Lost bag process is broken. Agent promised they'd call &amp; hold my bag when found. Now they're waking me at 3am w/ delivery. #fail", 'pert_score': 3.8134107167600364, 'sent_score': -0.5574, 'final_score': 0.37703999999999993}
+
+-----------------
+{'docnum': 74, 'handle': 'American', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '0', 'r5': '2', 'r6': '0', 'r7': '0', 'r8': '2', 'r9': '1', 'text': '@AmericanAir delta rerouted 6 of my bags onto aa977 MIA-CUR. How can I see if they made it onto the flight?', 'pert_score': 1.9067053583800182, 'sent_score': 0.0, 'final_score': 0.3}
+
+-----------------
+{'docnum': 7, 'handle': 'Delta', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '2', 'r9': '0', 'text': '@JetBlue so you guys lost my bag that had all my ski gear in it. I flew here from NYC to ski. Should I buy new stuff tomorrow? ...', 'pert_score': 1.9067053583800182, 'sent_score': -0.3744, 'final_score': 0.15023999999999998}
+
+-----------------

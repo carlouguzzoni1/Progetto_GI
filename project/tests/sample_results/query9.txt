@@ -1,0 +1,6 @@
+{'docnum': 78, 'handle': 'United', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '3', 'r9': '1', 'text': "@united - after having to now TAG MY OWN bags at the airport I was hoping they would actually arrive WITH me - here's hoping they arrive", 'pert_score': 0.0, 'sent_score': 0.8126, 'final_score': 0.32504}
+
+-----------------
+{'docnum': 13, 'handle': 'United', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '2', 'r5': '0', 'r6': '2', 'r7': '0', 'r8': '0', 'r9': '1', 'text': "@united doesn't help the 100 or more passengers that just arrived an hour Late Flight.", 'pert_score': 0.0, 'sent_score': 0.1386, 'final_score': 0.05544}
+
+-----------------

@@ -4,6 +4,9 @@ from whoosh.index import open_dir
 from whoosh import qparser as qp
 from whoosh.fields import *
 from project.src.miscellaneous.Misc import *
+from whoosh.lang.wordnet import Thesaurus
+from whoosh import scoring
+from whoosh.lang.porter import stem
 
 
 class Searcher:
@@ -13,15 +16,20 @@ class Searcher:
     suggerimenti.
     """
 
-    def __init__(self, *fields, index_dir = "./Index"):
+    def __init__(self, *fields, idx_dir = "./Index", thes_dir = "./thesaurus/wn_s.pl",
+        scoring_fun = "TF_IDF"):
         """
         Costruttore di classe.
         :param *fields:     str, specificati dall'utente, campi di ricerca.
-        :param index_dir:   str, ./Index di default, directory dell'indice.
+        :param idx_dir:     str, "./Index" di default, directory dell'indice.
+        :param thes_dir:    str, "./wn_s.pl" di default, directory del thesaurus.
+        :param scoring_fun: str, "TF_IDF" di default, nome del sistema di scoring
+                            da applicare.
         """
-        self.__open_index(index_dir)    # Apertura dell'indice.
-        self.__make_parser(*fields)     # Creazione del QueryParser.
-        self.__make_searcher()          # Creazione dell'index searcher.
+        self.__open_index(idx_dir)          # Apertura dell'indice.
+        self.__open_thesaurus(thes_dir)     # Apertura del thesaurus.
+        self.__make_parser(*fields)         # Creazione del QueryParser.
+        self.__make_searcher(scoring_fun)   # Creazione dell'index searcher.
 
 
     # I campi di ricerca possono essere letti e cambiati tramite i metodi
@@ -41,22 +49,33 @@ class Searcher:
         return self._raw_query
 
 
-    def __open_index(self, index_dir):
+    def __open_index(self, idx_dir):
         """
         Apre un indice Whoosh, assegnando l'oggetto ad un attributo di istanza.
-        :param index_dir:   str, directory dell'indice.
+        :param idx_dir:   str, directory dell'indice.
         """
         # Tenta l'apertura, lanciando OSError in caso di directory non
         # esistente.
         try:
-            ix = open_dir(index_dir)
+            ix = open_dir(idx_dir)
         except:
             raise OSError(
-                "Directory 'Index' non trovata. Specificarne una valida."
+                "Directory not found."
                 )
 
         # Imposta l'indice aperto come attributo d'istanza.
         self._ix = ix
+
+
+    def __open_thesaurus(self, thes_dir):
+        """
+        Apre un thesaurus WordNet da file. Ne assegna il contenuto ad un ogget-
+        to Thesaurus di Whoosh, che è attributo di istanza.
+        :param thes_dir:    str, directory e nome del thesaurus file.
+        """
+        # L'apertura è interamente gestita da open.
+        with open(thes_dir) as f:
+            self._thesaurus = Thesaurus.from_file(f)        
 
 
     @staticmethod
@@ -70,7 +89,7 @@ class Searcher:
         for i in selected_fields:
             if i not in available_fields:
                 raise ValueError(
-                    "Campo selezionato per la ricerca su indice inesistente."
+                    "Selected field does not exist."
                     )
 
 
@@ -102,23 +121,41 @@ class Searcher:
             )
 
 
-    def __make_searcher(self):
+    def __make_searcher(self, scoring_fun):
         """
         Crea un oggetto Whoosh searcher dall'indice e lo assegna come
         attributo di istanza.
+        :param scoring_fun  str, nome del sistema di scoring da adottare.
         """
-        self._searcher = self._ix.searcher()
+        scoring_system = eval("scoring.{}()".format(scoring_fun))
+        self._searcher = self._ix.searcher(weighting = scoring_system)
 
 
-    def submit_query(self, raw_query, results_threshold=20):
+    def submit_query(self, raw_query, results_threshold = 100, expand = False):
         """
         Sottopone una query all'indice Whoosh.
         :param raw_query:   str, una query a discrezione dell'utente.
         """
         # Imposta la query come attributo di istanza.
         self._raw_query = raw_query
-        # Effettua il parsing della query.
-        query = self._parser.parse(self._raw_query)
+        # Forza la non-espansione della query con thesaurus se si tratta di una
+        # ricerca in prossimità.
+        if raw_query[0] == '"' and raw_query[-1] == '"':
+            expand = False
+        # Se opportuno, espande la query con sinonimi. Dopodiché esegue parsing.
+        if expand:
+            # Per cercare i sinonimi delle forme basi dei vocaboli nella query:
+            words = [stem(i) for i in raw_query.split()]
+            print(words)
+            # Per cercare i sinonimi dei vocaboli nella query:
+            # words = [i for i in raw_query.split()]
+            synonyms = [j for i in words for j in self._thesaurus.synonyms(i)]            
+            words.extend(synonyms)
+            print(words)
+            expanded_query = " ".join(words)
+            query = self._parser.parse(expanded_query)
+        else:
+            query = self._parser.parse(self._raw_query)
         # Decoratore che stampa il tempo di esecuzione.
         clock = time_function(self._searcher.search)
         # Definisce il numero massimo di risultati considerati.
@@ -128,7 +165,7 @@ class Searcher:
         if results:
             return results
         else:
-            print("Nessun risultato per la query.")
+            print("No result for this query.")
             self.__make_suggestions()
 
 
@@ -165,20 +202,20 @@ class Searcher:
 
                 if not_found:
                     print(
-                        "Il termine\"",
+                        "Term\"",
                         word,
-                        "\"non è presente tra i vocaboli del corpus."
+                        "\"not included in corpus vocabulary."
                         )
                     # Crea i suggerimenti.
                     suggestions = self._searcher.suggest(
                         field,
-                        word,
+                        stem(word),
                         limit = suggestions_limit,
                         maxdist = max_edit_distance
                     )
                     # Propone i suggerimenti.
                     if suggestions:
-                        print("Quello che volevi scrivere è forse nell'elenco?")
+                        print("Did you mean any of the following?")
                         print(", ".join(suggestions))
                     else:
-                        print("Non sono disponibili correzioni per", word)
+                        print("No corrections available for", word)

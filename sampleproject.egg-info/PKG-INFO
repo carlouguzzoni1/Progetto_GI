@@ -42,207 +42,126 @@ Provides-Extra: dev
 Provides-Extra: test
 License-File: LICENSE.txt
 
-# Twitter opinion retrieval system
+# TwOR
+## (Twitter Opinion Retrieval)
 
-![Python Logo](https://www.python.org/static/community_logos/python-logo.png "Sample inline image")
+TwOR is a framework written in python3 based on **whoosh**, specially made for **opinion retrieval**. It has been tested and used mainly for corpora made of tweets.
+# Dependencies 
+Theese dependencies are **mandatory**:
+- whoosh
+- tqdm
+- pyexcel_ods3
+- expertai-nlapi
+- vaderSentiment
+- transformers
+- tensorflow
+# Optional dependencies
+- textblob
+- matplotlib
+# Quick start
++ Clone the repo;
++ Install the dependencies;
++ Run `indexing_script.py` to create the Index;
++ Run `query_script.py` to launch queries;
+    + Insert any query;
+    + The default sentiment analysis tool is [**Vader**](https://github.com/cjhutto/vaderSentiment), which supports one of **positive** or **negative** as sentiment parameters.
+    + If you want support for more sentiment categories, go to  [Queries](#queries);
++ Check `output.txt` or `output.ods` to see the results;
 
-A sample project that exists as an aid to the [Python Packaging User
-Guide][packaging guide]'s [Tutorial on Packaging and Distributing
-Projects][distribution tutorial].
-
-This project does not aim to cover best practices for Python project
-development as a whole. For example, it does not provide guidance or tool
-recommendations for version control, documentation, or testing.
-
-[The source for this project is available here][src].
-
-The metadata for a Python project is defined in the `pyproject.toml` file, 
-an example of which is included in this project. You should edit this file
-accordingly to adapt this sample project to your needs.
-
-----
-[packaging guide]: https://packaging.python.org
-[distribution tutorial]: https://packaging.python.org/tutorials/packaging-projects/
-[src]: https://github.com/pypa/sampleproject
-[rst]: http://docutils.sourceforge.net/rst.html
-[md]: https://tools.ietf.org/html/rfc7764#section-3.5 "CommonMark variant"
-[md use]: https://packaging.python.org/specifications/core-metadata/#description-content-type-optional
-
-# Installazione
-## Installazione automatica
-Per installare in modo rapido il software basta eseguire lo script `install.sh`.
-In caso di problemi, si può rimuovere il software eseguendo lo script `uninstall.sh`.
-## Installazione manuale
-Per installare il software manualmente, ci si può posizionare all'interno della cartella `dist` e usare
-il seguente comando:
-```sh
-python3 -m pip install sampleproject-3.0.0-py3-none-any.whl
-```
-
-# Esempio di esecuzione
-## Creazione dell'indice
-Per indicizzare correttamente un file .csv, è necessario posizionarlo all'interno di una cartella chiamata `csv`
-a sua volta contenuta nella cartella corrente di lavoro (dove è stata lanciata la shell python).
-Nell'esempio riportato si fa riferimento al file './csv/airline.csv', scaricabile insieme ad altri file
-d'esempio da questo link: https://github.com/theElandor/csv .
+# Indexing
 
 
-```python 
-import project.src.back_end.Database as dd
-import project.src.back_end.IndexGenerator as ig
+```python
+import Main.Database as dd
+import Main.IndexGenerator as ig
 from whoosh.fields import *
 from whoosh.analysis import StemmingAnalyzer
 
 
-# Creazione di un oggetto Database.
 db = dd.Database('./csv/airline.csv')
-# Popolazione del Database.
 db.fillDb()
-# Selezione dei campi da indicizzare.
 db.filterFields('handle','text')
-db.getSample(50, ods=True, csv=True)
-
-
-# Creazione dello schema per l'indice Whoosh.
 schema = Schema(
     handle = TEXT(stored = True, analyzer = StemmingAnalyzer()),
     text = TEXT(stored = True, analyzer = StemmingAnalyzer())
     )
-
-# Creazione dell'indice.
 i = ig.IndexGenerator(schema, db)
-# Popolazione dell'indice.
 i.fillIndex()
 ```
-## Interrogazione tramite query
++ The `Database` objects is used to process raw data extracted from the csv file. The /csv contains 2 files downloaded from [Kaggle](https://www.kaggle.com/) used as an example.
+Check our `presentation` fore more information on the dataset that has been used. 
++ The `filterFields` method is used to keep only the specified fields from the dataset. In      this case, we keep only the author and the text of the tweet.
++ The `IndexGenerator` object is used to create the Index. The `fillIndex` method fills the Index with documents. It might take some time according to the size of the documents.
+
+# Queries
 ```python
-from project.src.front_end.Results import Results
-from project.src.front_end.Searcher import Searcher
+from Main.Results import Results
+from Main.Searcher import Searcher
 
-# Creazione del Searcher.
-s = Searcher("handle", "text")
-
-# Estrazione dei risultati con inserimento di una query.
-res = s.submit_query("american airline")
-# Elaborazione dei risultati in un oggetto Results, tramite lo strumento
-# di sentiment analysis Vader, impostato per il sentiment complessivo.
-r = Results("Vader", "compound", res)
-r.printResults(s, "output.txt") 
-
-# Si ripete la procedura appena vista.
-res2 = s.submit_query("service on board")
-r2 = Results("Vader", "compound", res2)
-r2.printResults(s, "output2.txt")
-
+query = input("Insert query > ")
+sentiment = input("Insert sentiment > " )
+s = Searcher("handle", "text", scoring_fun = "TF_IDF")
+res = s.submit_query(query, results_threshold = 100, expand=False)
+r = Results("Vader", sentiment, res, ranking_fun = "balanced_weighted_avg")
+r.printResults(s, "output.txt")
+r.printResults(s, "output.ods")
 ```
-## Benchmarking
-Il software contiene anche uno script di benchmarking pre-installato, per valutare l'efficacia del
-sistema di Opinion Retrieval e come ulteriore esempio di utilizzo dei tool da noi creati.
-Il sistema di valutazione adottato è il **DCG** (*Distance Comulative Gain*), basato su un campione casuale
-di 50 Tweet i cui valori di rilevanza rispetto alle query sono stati generati casualmente per ragioni didattiche.
-Per studiare effettivamente le performance, basta modificare il file csv generato dal metodo **sample** dell'oggetto `Database` inserendo le annotazioni a mano.
-Il codice dello script è riportato sotto, ma può anche essere eseguito usando il seguente comando:
-```sh
-import project.tests.benchmarking_script
-```
++ The `Searcher` object retrieves documents based on pertinence. Takes the fields that need to be scanned as arguments.
+	+ To use a different **ranking function**, use the `scoring_fun` parameter. **TF_IDF** is used as default, but BM25F and PL2 are supported as well.
++ If you want to turn on query expansion (generally recommended), set `expand=True`. It's also possible to increment the maximum number of results by changing the `results_threshold` parameter;
++ The `Results` object gives a global ranking to the retrieved documents based on **pertinence** and **sentiment** scores. Takes the sentiment analysis tool as an argument, in this case Vader is used as default. For now 4 different tools are supported:
+    + **Vader**: lexicon and rule-based tool that gives a score in a [-1,1] range, so that a "binary" classification can be applied (positive/negative or neutral).
+    + [ExpertAI](https://pypi.org/project/expertai-nlapi/): API based on AI, supports different sentiment types.
+    + [Roberta](https://huggingface.co/docs/transformers/model_doc/roberta); AI based, supports different sentiment types, check documentation for more information. For this tool, sentiment categories are:
+	    + anger;
+	    + disgust;
+	    + fear;
+	    + joy;
+	    + neutral;
+	    + sadness;
+	    + surprise;
+    + **Roberta2**: same as Roberta but uses a different pre-trained model that only gives a positive and negative score to the input text. Really usefull during benchmarking if you want to compare an AI-based approach (Roberta2) to a symbolic approach (Vader).
+# Benchmarks
+ We extracted a random sample of 100 tweets using the `Database.getSample(self, n, ods=False, csv=False)`method, then we manually annotated a level of "satisfaction" in a [0-3] range for each tweet for each query, based on the user original need (pertinence and sentiment are both considered!). We tried to stay simple and think of common queries that users might actually submit, like the ones listed below. In this particular benchmark, the user is always looking for "positive" tweets.
+ + *reviews on customer service*,
++ *sauvignon wine*,
++ *technical problems with flight*,
++ *quality of personal*,
++ *rerouting or rescheduling*, 
++ *late arrival*,
++ *tickets and bookings*,
++ luggage and bags,
++ departures and arrivals,
++ internet connection
 
-```python
-# Parte 1: costruzione dell'indice da un campione casuale preso dal corpora.
-# Import necessari.
-import project.src.back_end.Database as dd
-import project.src.back_end.IndexGenerator as ig
-from whoosh.fields import *
-from whoosh.analysis import StemmingAnalyzer
+If you want to see produced graphs, you can run the `benchmark.py` script yourself. 
+The plotted graphs are saved in the `./BenchGraphs` folder.
+`./sample_results` contains one output file for each one of the 10 submitted queries.
+The **DCG** scores are encouraging, revealing that the ranking system is apparently decent. Identifying **sarcasm** is a big problem though, and cannot be solved easily without training a model with specific training sets. Even **Roberta** has some issues with sarcasm detection.
+**Vader** has been used in the benchmarking script, but using Roberta does not considerably change the DCG scores.
+Check out our `presentation` for more information.
 
-
-# Dizionario di query per il benchmarking.
-queries = {
-    "r1"    : "reviews on customer service",
-    "r2"    : "what people think about food on board",
-    "r3"    : "technical problems with flight",
-    "r4"    : "quality of personal",
-    "r5"    : "risks and dangers when flying",
-    "r6"    : "experience and panorama",
-    "r7"    : "tickets and bookings",
-    "r8"    : "luggage and bags",
-    "r9"    : "responses and replies",
-    "r10"   : "internet connection",
-    }
-
-# Costruzione della struttura dati Database.
-db = dd.Database("sample.csv")
-db.fillDb()
-fields = ["handle", "text"]
-fields.extend(list(queries.keys()))
-db.filterFields(*fields)
-
-# Costruzione dello schema dell'indice.
-schema_fields = {
-    "handle"  : TEXT(stored = True, analyzer = StemmingAnalyzer()),
-    "text"    : TEXT(stored = True, analyzer = StemmingAnalyzer())
-        }
-
-for i in queries.keys():
-    schema_fields[i] = eval("NUMERIC(stored = True, numtype = int)")
-
-schema = Schema(**schema_fields)
-
-# Costruzione dell'indice.
-ix = ig.IndexGenerator(schema, db)
-ix.fillIndex()
+Some more specific queries, that you can find in the `query_examples.py` script:
++ another AND trip,
++ internet OR connection OR wifi,
+ + "good food"
+# Other
++ `./frame` contains some nice frames for a cleaner output on .txt files;
++ `piechart.py` contains a simple script that generates a sentiment-based piechart based on the input query. The output is saved in the `./piechart` folder.
++ `./Main` contains the core of the software;
++ `./Printers` contains modules used to format output;
++ `./Tools` contains the modules corresponding to each sentiment analysis tool;
++ `./sample_results` contains one output file for each query that has been tested during the benchmark.
++ `./samples` contains a random sample of 100 tweet that has been manually annotated to calculate the **DCG** score during the benchmark.
++ `wn_s.pl` is the **Wordnet Thesaurus** that has been used for query expansion;
++ You can use the `wcl.py` script to visualize the most used words in certain types of tweets by creating a wordcloud. The default sentiment analysis tool used is Vader. The output will be stored in the `./Wordcloud` folder.
++ `ExampleOutput` contains the output of `./query_examples.py`.
 
 
-# Parte 2: sottomissione delle query all'indice precedentemente costruito,
-# estrazione dei risultati e valutazione del sistema di IR tramite DCG.
-# Import necessari.
-from project.src.front_end.Results import Results
-from project.src.front_end.Searcher import Searcher
-import math
-from functools import reduce
 
+## License
 
-# Creazione del Searcher.
-s = Searcher("handle", "text")
+MIT
 
+**Free Software**
 
-def count_dcg(ordered, field):
-    """Calcola la DCG del nostro sistema di IR."""
-    li = [int(i[field]) for i in ordered]
-    num_results = len(li)
-    l = [li[idx] / math.log(idx + 1) if idx != 0 else li[idx] for idx in range(num_results)]
-    return reduce(lambda x, y : x + y, l)
-
-
-# Struttura dati per la stampa finale.
-final_data = []
-
-for k, v in queries.items():
-    res = s.submit_query(v)
-    try:
-        r = Results("Vader", "compound", res)
-        print("Query:", queries[k], "; valore DCG:", count_dcg(r.ordered, k))
-        final_data.append((queries[k], count_dcg(r.ordered, k)))
-    except:
-        final_data.append((queries[k], 0))
-    
-
-# Parte 3: plotting dei risultati.
-# Import necessari.
-import matplotlib.pyplot as plt
-
-
-# Asse x: query.
-qrs = ["q{}".format(i) for i in range(1, len(queries) + 1)]
-# Asse y: valore DCG (all'indice 1 nella tupla).
-vls = [element[1] for element in final_data]
-# Creazione del plot.
-fig = plt.figure(figsize = (10, 5))
-plt.bar(qrs, vls, color ='blue', width = 0.4)
-
-# Creazione delle etichette di plot ed assi.
-plt.xlabel("Queries")
-plt.ylabel("DCG score")
-plt.title("Distance Cumulative Gain")
-# Salvataggio del plot su file.
-plt.savefig("bench.png")
-```
