@@ -1,6 +1,24 @@
-{'docnum': 78, 'handle': 'United', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '3', 'r9': '1', 'text': "@united - after having to now TAG MY OWN bags at the airport I was hoping they would actually arrive WITH me - here's hoping they arrive", 'pert_score': 0.0, 'sent_score': 0.8126, 'final_score': 0.32504}
+{'docnum': 78, 'handle': 'United', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '3', 'r9': '1', 'text': "@united - after having to now TAG MY OWN bags at the airport I was hoping they would actually arrive WITH me - here's hoping they arrive", 'pert_score': 6.008743863093309, 'sent_score': 0.8126, 'final_score': 0.92504}
 
 -----------------
-{'docnum': 13, 'handle': 'United', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '2', 'r5': '0', 'r6': '2', 'r7': '0', 'r8': '0', 'r9': '1', 'text': "@united doesn't help the 100 or more passengers that just arrived an hour Late Flight.", 'pert_score': 0.0, 'sent_score': 0.1386, 'final_score': 0.05544}
+{'docnum': 46, 'handle': 'American', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '1', 'text': '@AmericanAir I have almost 3 million miles w u so I am loyal to u.  When r u going to reciprocate?  What a joke', 'pert_score': 2.6638215157026606, 'sent_score': 0.6771, 'final_score': 0.5368345149665263}
+
+-----------------
+{'docnum': 22, 'handle': 'US Airways', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '2', 'r5': '2', 'r6': '2', 'r7': '2', 'r8': '0', 'r9': '2', 'text': '@USAirways thank you for putting me on a flight that will be leaving Late Flightr than the original flight I was booked on.', 'pert_score': 3.0043719315466544, 'sent_score': 0.5859, 'final_score': 0.53436}
+
+-----------------
+{'docnum': 50, 'handle': 'United', 'r1': '1', 'r10': '2', 'r2': '0', 'r3': '1', 'r4': '0', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '0', 'text': "@united on final. Pls don't let my connection leave!!! Conf# NPBHD0 http://t.co/eWXwXiDTfX", 'pert_score': 3.0043719315466544, 'sent_score': 0.5826, 'final_score': 0.53304}
+
+-----------------
+{'docnum': 92, 'handle': 'Southwest', 'r1': '1', 'r10': '1', 'r2': '0', 'r3': '1', 'r4': '0', 'r5': '0', 'r6': '0', 'r7': '2', 'r8': '0', 'r9': '0', 'text': "@SouthwestAir I did but it only shows one flight one way. When I try to go to the home page and book roundtrip there's nothing available :(", 'pert_score': 2.6638215157026606, 'sent_score': 0.4782, 'final_score': 0.4572745149665263}
+
+-----------------
+{'docnum': 13, 'handle': 'United', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '2', 'r5': '0', 'r6': '2', 'r7': '0', 'r8': '0', 'r9': '1', 'text': "@united doesn't help the 100 or more passengers that just arrived an hour Late Flight.", 'pert_score': 3.0043719315466544, 'sent_score': 0.1386, 'final_score': 0.35544}
+
+-----------------
+{'docnum': 54, 'handle': 'American', 'r1': '0', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '0', 'r5': '2', 'r6': '0', 'r7': '2', 'r8': '0', 'r9': '2', 'text': '@AmericanAir is flight 2934 dfw to gsp going to be Cancelled Flightled tomorrow?', 'pert_score': 2.6638215157026606, 'sent_score': -0.25, 'final_score': 0.1659945149665263}
+
+-----------------
+{'docnum': 38, 'handle': 'Delta', 'r1': '2', 'r10': '1', 'r2': '0', 'r3': '1', 'r4': '2', 'r5': '1', 'r6': '0', 'r7': '2', 'r8': '0', 'r9': '1', 'text': '@JetBlue are yall going bankrupt or is inflation just really bad these days? You went from $50 to $120 for overweight fees! Outrageous', 'pert_score': 2.6638215157026606, 'sent_score': -0.9214, 'final_score': -0.10256548503347368}
 
 -----------------

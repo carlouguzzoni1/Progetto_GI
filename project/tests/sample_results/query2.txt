@@ -1,3 +1,36 @@
-{'docnum': 75, 'handle': 'American', 'r1': '2', 'r10': '0', 'r2': '3', 'r3': '0', 'r4': '2', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '0', 'text': '@AmericanAir upgraded to 1st class. Inquired about red wine.  "Sauvignon blanc &amp; I can\'t pronounce the other one."  Couldn\'t describe...', 'pert_score': 5.259245227650369, 'sent_score': 0.0, 'final_score': 0.6}
+{'docnum': 18, 'handle': 'US Airways', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '2', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '1', 'text': '@USAirways  Houston Gate 17 customer Service needs to treat people with respect. There are hardly people waiting! #chillpill #usairwaysfail', 'pert_score': 5.185160600477808, 'sent_score': 0.7263, 'final_score': 0.6598965894359801}
+
+-----------------
+{'docnum': 34, 'handle': 'US Airways', 'r1': '2', 'r10': '1', 'r2': '0', 'r3': '1', 'r4': '2', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '0', 'text': "@USAirways how do I get a hold of customer service? I've called multiple times &amp; have been on hold for 30+ mins only to have to hang up", 'pert_score': 8.422559656628959, 'sent_score': 0.0, 'final_score': 0.6}
+
+-----------------
+{'docnum': 9, 'handle': 'United', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '2', 'r5': '0', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '0', 'text': '@united I believe just customer service. At last post he was at Narita in Tokyo. They sent him to a motel to rest. Said standby maybe 2days', 'pert_score': 5.185160600477808, 'sent_score': 0.4215, 'final_score': 0.53797658943598}
+
+-----------------
+{'docnum': 10, 'handle': 'United', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '2', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '0', 'text': '@united customer service 👎', 'pert_score': 5.185160600477808, 'sent_score': 0.4215, 'final_score': 0.53797658943598}
+
+-----------------
+{'docnum': 33, 'handle': 'American', 'r1': '2', 'r10': '1', 'r2': '0', 'r3': '2', 'r4': '2', 'r5': '0', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '0', 'text': '@AmericanAir I sure hope you all can fix @USAirways. Good luck, their service sucks. #nexttimeiwillflysouthwest', 'pert_score': 2.555959206488904, 'sent_score': 0.8225, 'final_score': 0.5110795086546338}
+
+-----------------
+{'docnum': 58, 'handle': 'US Airways', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '0', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '0', 'text': '@USAirways #usairways lost a passenger today for not upholding their promise of excellent customer service!!!', 'pert_score': 5.185160600477808, 'sent_score': 0.3213, 'final_score': 0.49789658943598003}
+
+-----------------
+{'docnum': 1, 'handle': 'United', 'r1': '2', 'r10': '1', 'r2': '0', 'r3': '1', 'r4': '2', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '0', 'text': '@united Also, your phone customer service is almost useless. http://t.co/Mb3bJwGOAp', 'pert_score': 5.185160600477808, 'sent_score': 0.0754, 'final_score': 0.3995365894359801}
+
+-----------------
+{'docnum': 88, 'handle': 'United', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '1', 'r5': '1', 'r6': '2', 'r7': '0', 'r8': '0', 'r9': '0', 'text': "@united how does that help me with my customers that I couldn't meet with (and subsequently lost)?", 'pert_score': 2.555959206488904, 'sent_score': 0.4939, 'final_score': 0.3796395086546338}
+
+-----------------
+{'docnum': 91, 'handle': 'Southwest', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '0', 'text': '@SouthwestAir Customer service said it was a known problem that they were using same confirmation numbers for domestic and international', 'pert_score': 5.185160600477808, 'sent_score': -0.4019, 'final_score': 0.20861658943598005}
+
+-----------------
+{'docnum': 93, 'handle': 'Southwest', 'r1': '0', 'r10': '1', 'r2': '0', 'r3': '0', 'r4': '0', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '0', 'text': '@SouthwestAir I cannot DM you as you do not follow me.', 'pert_score': 2.456011502714073, 'sent_score': 0.0, 'final_score': 0.17495950895030402}
+
+-----------------
+{'docnum': 98, 'handle': 'US Airways', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '2', 'r5': '0', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '0', 'text': '@USAirways now you just hang up on me. I’m starting to think this is personal!', 'pert_score': 2.1094379124341005, 'sent_score': 0.0, 'final_score': 0.15027055895820493}
+
+-----------------
+{'docnum': 47, 'handle': 'American', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '2', 'r5': '1', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '1', 'text': "@AmericanAir why don't you take care of @Cowboycerrone flight screw ups", 'pert_score': 3.1641568686511508, 'sent_score': -0.4639, 'final_score': 0.03984583843730738}
 
 -----------------

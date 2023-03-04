@@ -1,90 +1,81 @@
-{'docnum': 83, 'handle': 'Delta', 'r1': '0', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '0', 'r5': '2', 'r6': '3', 'r7': '0', 'r8': '3', 'r9': '2', 'text': '@JetBlue - Yes. Best case scenario I get my gear Late Flight Friday, early Saturday. Camp starts at 6AM tomorrow #toolittletooLate Flight', 'pert_score': 3.079111093311683, 'sent_score': 0.7845, 'final_score': 0.566923342414672}
+{'docnum': 86, 'handle': 'United', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '0', 'r5': '1', 'r6': '1', 'r7': '2', 'r8': '0', 'r9': '1', 'text': "@united My flight was Cancelled Flighted and I'm needing some help reFlight Booking Problems.", 'pert_score': 4.563260900586003, 'sent_score': 0.2023, 'final_score': 0.5597572205392}
 
 -----------------
-{'docnum': 86, 'handle': 'United', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '0', 'r5': '1', 'r6': '1', 'r7': '2', 'r8': '0', 'r9': '1', 'text': "@united My flight was Cancelled Flighted and I'm needing some help reFlight Booking Problems.", 'pert_score': 5.759125951316996, 'sent_score': 0.2023, 'final_score': 0.554358328792664}
+{'docnum': 83, 'handle': 'Delta', 'r1': '0', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '0', 'r5': '2', 'r6': '3', 'r7': '0', 'r8': '3', 'r9': '2', 'text': '@JetBlue - Yes. Best case scenario I get my gear Late Flight Friday, early Saturday. Camp starts at 6AM tomorrow #toolittletooLate Flight', 'pert_score': 2.3093333199837622, 'sent_score': 0.7845, 'final_score': 0.5561255589216002}
 
 -----------------
-{'docnum': 94, 'handle': 'American', 'r1': '3', 'r10': '1', 'r2': '0', 'r3': '3', 'r4': '3', 'r5': '0', 'r6': '0', 'r7': '2', 'r8': '0', 'r9': '0', 'text': '@AmericanAir  CXL flight. rebooked 2 PAX no problems. Thank you and everyone at AA for helping us all out!', 'pert_score': 4.219570404661154, 'sent_score': 0.3899, 'final_score': 0.502836657585328}
+{'docnum': 94, 'handle': 'American', 'r1': '3', 'r10': '1', 'r2': '0', 'r3': '3', 'r4': '3', 'r5': '0', 'r6': '0', 'r7': '2', 'r8': '0', 'r9': '0', 'text': '@AmericanAir  CXL flight. rebooked 2 PAX no problems. Thank you and everyone at AA for helping us all out!', 'pert_score': 3.4085942405941214, 'sent_score': 0.3899, 'final_score': 0.5136344410783998}
 
 -----------------
-{'docnum': 22, 'handle': 'US Airways', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '2', 'r5': '2', 'r6': '2', 'r7': '2', 'r8': '0', 'r9': '2', 'text': '@USAirways thank you for putting me on a flight that will be leaving Late Flightr than the original flight I was booked on.', 'pert_score': 3.079111093311683, 'sent_score': 0.5859, 'final_score': 0.48748334241467206}
+{'docnum': 22, 'handle': 'US Airways', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '2', 'r5': '2', 'r6': '2', 'r7': '2', 'r8': '0', 'r9': '2', 'text': '@USAirways thank you for putting me on a flight that will be leaving Late Flightr than the original flight I was booked on.', 'pert_score': 2.3093333199837622, 'sent_score': 0.5859, 'final_score': 0.47668555892160014}
 
 -----------------
-{'docnum': 0, 'handle': 'Southwest', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '2', 'r5': '1', 'r6': '1', 'r7': '0', 'r8': '0', 'r9': '2', 'text': '@SouthwestAir you guys held our flight #330!  Thank you!!!  About to take off from MDW now to Oakland.  Thanks', 'pert_score': 1.5395555466558415, 'sent_score': 0.7627, 'final_score': 0.43164167120733604}
+{'docnum': 0, 'handle': 'Southwest', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '2', 'r5': '1', 'r6': '1', 'r7': '0', 'r8': '0', 'r9': '2', 'text': '@SouthwestAir you guys held our flight #330!  Thank you!!!  About to take off from MDW now to Oakland.  Thanks', 'pert_score': 1.1546666599918811, 'sent_score': 0.7627, 'final_score': 0.4262427794608001}
 
 -----------------
-{'docnum': 11, 'handle': 'American', 'r1': '2', 'r10': '1', 'r2': '0', 'r3': '0', 'r4': '2', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '0', 'text': '@AmericanAir still no response from AA. great job guys!', 'pert_score': 2.812583883245467, 'sent_score': 0.4926, 'final_score': 0.4282530390147846}
+{'docnum': 6, 'handle': 'American', 'r1': '1', 'r10': '2', 'r2': '0', 'r3': '0', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '1', 'text': '@AmericanAir do you know if there is wifi on this flight? If so how much is it? Thank you :-)', 'pert_score': 1.1546666599918811, 'sent_score': 0.6322, 'final_score': 0.37404277946080006}
 
 -----------------
-{'docnum': 6, 'handle': 'American', 'r1': '1', 'r10': '2', 'r2': '0', 'r3': '0', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '1', 'text': '@AmericanAir do you know if there is wifi on this flight? If so how much is it? Thank you :-)', 'pert_score': 1.5395555466558415, 'sent_score': 0.6322, 'final_score': 0.379441671207336}
+{'docnum': 52, 'handle': 'US Airways', 'r1': '0', 'r10': '0', 'r2': '0', 'r3': '0', 'r4': '0', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '1', 'r9': '0', 'text': '@USAirways I left my son\'s Duke hat on flight #1761 last night. It says "Mason" on the back. Any way of locating it? Thanks in advance!', 'pert_score': 1.1546666599918811, 'sent_score': 0.4926, 'final_score': 0.31820277946080006}
 
 -----------------
-{'docnum': 52, 'handle': 'US Airways', 'r1': '0', 'r10': '0', 'r2': '0', 'r3': '0', 'r4': '0', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '1', 'r9': '0', 'text': '@USAirways I left my son\'s Duke hat on flight #1761 last night. It says "Mason" on the back. Any way of locating it? Thanks in advance!', 'pert_score': 1.5395555466558415, 'sent_score': 0.4926, 'final_score': 0.323601671207336}
+{'docnum': 48, 'handle': 'American', 'r1': '2', 'r10': '1', 'r2': '0', 'r3': '2', 'r4': '2', 'r5': '1', 'r6': '1', 'r7': '3', 'r8': '0', 'r9': '3', 'text': '@AmericanAir your team rebooked my Cancelled Flightled AA flight on a different airline. New airline has no such Flight Booking Problems. Flight is this evening.', 'pert_score': 5.717927560577883, 'sent_score': -0.7096, 'final_score': 0.31615999999999994}
 
 -----------------
-{'docnum': 92, 'handle': 'Southwest', 'r1': '1', 'r10': '1', 'r2': '0', 'r3': '1', 'r4': '0', 'r5': '0', 'r6': '0', 'r7': '2', 'r8': '0', 'r9': '0', 'text': "@SouthwestAir I did but it only shows one flight one way. When I try to go to the home page and book roundtrip there's nothing available :(", 'pert_score': 1.5395555466558415, 'sent_score': 0.4782, 'final_score': 0.31784167120733603}
+{'docnum': 92, 'handle': 'Southwest', 'r1': '1', 'r10': '1', 'r2': '0', 'r3': '1', 'r4': '0', 'r5': '0', 'r6': '0', 'r7': '2', 'r8': '0', 'r9': '0', 'text': "@SouthwestAir I did but it only shows one flight one way. When I try to go to the home page and book roundtrip there's nothing available :(", 'pert_score': 1.1546666599918811, 'sent_score': 0.4782, 'final_score': 0.31244277946080007}
 
 -----------------
-{'docnum': 48, 'handle': 'American', 'r1': '2', 'r10': '1', 'r2': '0', 'r3': '2', 'r4': '2', 'r5': '1', 'r6': '1', 'r7': '3', 'r8': '0', 'r9': '3', 'text': '@AmericanAir your team rebooked my Cancelled Flightled AA flight on a different airline. New airline has no such Flight Booking Problems. Flight is this evening.', 'pert_score': 7.2986814979728365, 'sent_score': -0.7096, 'final_score': 0.31615999999999994}
+{'docnum': 66, 'handle': 'Southwest', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '0', 'r5': '1', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '0', 'text': "@SouthwestAir flight was Cancelled Flightled and it won't let me rebook online. Wait time on phone is too long. Please help", 'pert_score': 1.1546666599918811, 'sent_score': 0.4588, 'final_score': 0.3046827794608001}
 
 -----------------
-{'docnum': 66, 'handle': 'Southwest', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '0', 'r5': '1', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '0', 'text': "@SouthwestAir flight was Cancelled Flightled and it won't let me rebook online. Wait time on phone is too long. Please help", 'pert_score': 1.5395555466558415, 'sent_score': 0.4588, 'final_score': 0.31008167120733604}
+{'docnum': 40, 'handle': 'United', 'r1': '2', 'r10': '1', 'r2': '0', 'r3': '0', 'r4': '1', 'r5': '1', 'r6': '0', 'r7': '2', 'r8': '0', 'r9': '2', 'text': '@united It appears there are six flights to Calgary tomorrow is this correct?', 'pert_score': 1.1546666599918811, 'sent_score': 0.4215, 'final_score': 0.2897627794608001}
 
 -----------------
-{'docnum': 40, 'handle': 'United', 'r1': '2', 'r10': '1', 'r2': '0', 'r3': '0', 'r4': '1', 'r5': '1', 'r6': '0', 'r7': '2', 'r8': '0', 'r9': '2', 'text': '@united It appears there are six flights to Calgary tomorrow is this correct?', 'pert_score': 1.5395555466558415, 'sent_score': 0.4215, 'final_score': 0.29516167120733605}
+{'docnum': 42, 'handle': 'United', 'r1': '2', 'r10': '1', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '2', 'r8': '0', 'r9': '1', 'text': "@united I was not looking for the fare to be returned on the companion flight.  don't understand why an additional $200 fee was necessary.", 'pert_score': 1.1546666599918811, 'sent_score': 0.4215, 'final_score': 0.2897627794608001}
 
 -----------------
-{'docnum': 42, 'handle': 'United', 'r1': '2', 'r10': '1', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '2', 'r8': '0', 'r9': '1', 'text': "@united I was not looking for the fare to be returned on the companion flight.  don't understand why an additional $200 fee was necessary.", 'pert_score': 1.5395555466558415, 'sent_score': 0.4215, 'final_score': 0.29516167120733605}
+{'docnum': 63, 'handle': 'United', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '0', 'r5': '0', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '0', 'text': "@united They couldn't get me first class on any of their flights so I just rebooked myself.", 'pert_score': 1.1546666599918811, 'sent_score': 0.4215, 'final_score': 0.2897627794608001}
 
 -----------------
-{'docnum': 63, 'handle': 'United', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '0', 'r5': '0', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '0', 'text': "@united They couldn't get me first class on any of their flights so I just rebooked myself.", 'pert_score': 1.5395555466558415, 'sent_score': 0.4215, 'final_score': 0.29516167120733605}
+{'docnum': 39, 'handle': 'US Airways', 'r1': '0', 'r10': '1', 'r2': '0', 'r3': '0', 'r4': '1', 'r5': '1', 'r6': '0', 'r7': '2', 'r8': '0', 'r9': '2', 'text': '@USAirways  I have a party of 4 booked for a flight in Aug. At 10:05am, how can I find out how much it would cost to change to an earlier fl', 'pert_score': 1.1546666599918811, 'sent_score': 0.4019, 'final_score': 0.2819227794608001}
 
 -----------------
-{'docnum': 39, 'handle': 'US Airways', 'r1': '0', 'r10': '1', 'r2': '0', 'r3': '0', 'r4': '1', 'r5': '1', 'r6': '0', 'r7': '2', 'r8': '0', 'r9': '2', 'text': '@USAirways  I have a party of 4 booked for a flight in Aug. At 10:05am, how can I find out how much it would cost to change to an earlier fl', 'pert_score': 1.5395555466558415, 'sent_score': 0.4019, 'final_score': 0.28732167120733604}
+{'docnum': 89, 'handle': 'United', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '1', 'text': "@united involuntarily bumped your passenger and can't guarantee them another flight for three days!", 'pert_score': 1.1546666599918811, 'sent_score': 0.3296, 'final_score': 0.2530027794608001}
 
 -----------------
-{'docnum': 89, 'handle': 'United', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '1', 'text': "@united involuntarily bumped your passenger and can't guarantee them another flight for three days!", 'pert_score': 1.5395555466558415, 'sent_score': 0.3296, 'final_score': 0.25840167120733604}
+{'docnum': 13, 'handle': 'United', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '2', 'r5': '0', 'r6': '2', 'r7': '0', 'r8': '0', 'r9': '1', 'text': "@united doesn't help the 100 or more passengers that just arrived an hour Late Flight.", 'pert_score': 1.1546666599918811, 'sent_score': 0.1386, 'final_score': 0.17660277946080008}
 
 -----------------
-{'docnum': 68, 'handle': 'US Airways', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '0', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '0', 'text': "@USAirways that link leads to a website that won't open on a cell phone.  Good job, shocking that your airline is folding.", 'pert_score': 2.812583883245467, 'sent_score': 0.0516, 'final_score': 0.2518530390147846}
+{'docnum': 95, 'handle': 'US Airways', 'r1': '0', 'r10': '1', 'r2': '0', 'r3': '0', 'r4': '0', 'r5': '1', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '0', 'text': '@USAirways so what is the  difference between Cancelled Flighting and reFlight Booking Problems - will that help me avoid a change fee?', 'pert_score': 3.4085942405941214, 'sent_score': -0.4939, 'final_score': 0.16011444107839984}
 
 -----------------
-{'docnum': 13, 'handle': 'United', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '2', 'r5': '0', 'r6': '2', 'r7': '0', 'r8': '0', 'r9': '1', 'text': "@united doesn't help the 100 or more passengers that just arrived an hour Late Flight.", 'pert_score': 1.5395555466558415, 'sent_score': 0.1386, 'final_score': 0.182001671207336}
+{'docnum': 30, 'handle': 'Virgin America', 'r1': '2', 'r10': '2', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '1', 'text': "@virginamerica What is your phone number. I can't find who to call about a flight reservation.", 'pert_score': 1.1546666599918811, 'sent_score': 0.0772, 'final_score': 0.15204277946080008}
 
 -----------------
-{'docnum': 30, 'handle': 'Virgin America', 'r1': '2', 'r10': '2', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '1', 'text': "@virginamerica What is your phone number. I can't find who to call about a flight reservation.", 'pert_score': 1.5395555466558415, 'sent_score': 0.0772, 'final_score': 0.15744167120733604}
+{'docnum': 69, 'handle': 'Virgin America', 'r1': '0', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '0', 'r5': '0', 'r6': '0', 'r7': '2', 'r8': '2', 'r9': '1', 'text': '@VirginAmerica hi I just booked a flight but need to add baggage, how can I do this?', 'pert_score': 1.1546666599918811, 'sent_score': 0.0, 'final_score': 0.12116277946080008}
 
 -----------------
-{'docnum': 95, 'handle': 'US Airways', 'r1': '0', 'r10': '1', 'r2': '0', 'r3': '0', 'r4': '0', 'r5': '1', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '0', 'text': '@USAirways so what is the  difference between Cancelled Flighting and reFlight Booking Problems - will that help me avoid a change fee?', 'pert_score': 4.219570404661154, 'sent_score': -0.4939, 'final_score': 0.14931665758532797}
+{'docnum': 74, 'handle': 'American', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '0', 'r5': '2', 'r6': '0', 'r7': '0', 'r8': '2', 'r9': '1', 'text': '@AmericanAir delta rerouted 6 of my bags onto aa977 MIA-CUR. How can I see if they made it onto the flight?', 'pert_score': 1.1546666599918811, 'sent_score': 0.0, 'final_score': 0.12116277946080008}
 
 -----------------
-{'docnum': 69, 'handle': 'Virgin America', 'r1': '0', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '0', 'r5': '0', 'r6': '0', 'r7': '2', 'r8': '2', 'r9': '1', 'text': '@VirginAmerica hi I just booked a flight but need to add baggage, how can I do this?', 'pert_score': 1.5395555466558415, 'sent_score': 0.0, 'final_score': 0.12656167120733602}
+{'docnum': 17, 'handle': 'US Airways', 'r1': '2', 'r10': '1', 'r2': '0', 'r3': '2', 'r4': '2', 'r5': '1', 'r6': '2', 'r7': '1', 'r8': '0', 'r9': '1', 'text': '@USAirways right, can you use a shuttle ticket from LGA to BOS for any shuttle flight? Probably gonna miss the 4pm.', 'pert_score': 1.1546666599918811, 'sent_score': -0.1531, 'final_score': 0.05992277946080007}
 
 -----------------
-{'docnum': 74, 'handle': 'American', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '0', 'r5': '2', 'r6': '0', 'r7': '0', 'r8': '2', 'r9': '1', 'text': '@AmericanAir delta rerouted 6 of my bags onto aa977 MIA-CUR. How can I see if they made it onto the flight?', 'pert_score': 1.5395555466558415, 'sent_score': 0.0, 'final_score': 0.12656167120733602}
+{'docnum': 57, 'handle': 'American', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '0', 'r5': '1', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '1', 'text': '@AmericanAir if my flight gets Cancelled Flightled i should be able to reschedule to any date i want, not the next day or 2 days after', 'pert_score': 1.1546666599918811, 'sent_score': -0.1779, 'final_score': 0.050002779460800076}
 
 -----------------
-{'docnum': 17, 'handle': 'US Airways', 'r1': '2', 'r10': '1', 'r2': '0', 'r3': '2', 'r4': '2', 'r5': '1', 'r6': '2', 'r7': '1', 'r8': '0', 'r9': '1', 'text': '@USAirways right, can you use a shuttle ticket from LGA to BOS for any shuttle flight? Probably gonna miss the 4pm.', 'pert_score': 1.5395555466558415, 'sent_score': -0.1531, 'final_score': 0.06532167120733601}
+{'docnum': 91, 'handle': 'Southwest', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '0', 'text': '@SouthwestAir Customer service said it was a known problem that they were using same confirmation numbers for domestic and international', 'pert_score': 1.9067053583800182, 'sent_score': -0.4019, 'final_score': 0.03931654922308775}
 
 -----------------
-{'docnum': 57, 'handle': 'American', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '0', 'r5': '1', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '1', 'text': '@AmericanAir if my flight gets Cancelled Flightled i should be able to reschedule to any date i want, not the next day or 2 days after', 'pert_score': 1.5395555466558415, 'sent_score': -0.1779, 'final_score': 0.05540167120733602}
+{'docnum': 54, 'handle': 'American', 'r1': '0', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '0', 'r5': '2', 'r6': '0', 'r7': '2', 'r8': '0', 'r9': '2', 'text': '@AmericanAir is flight 2934 dfw to gsp going to be Cancelled Flightled tomorrow?', 'pert_score': 1.1546666599918811, 'sent_score': -0.25, 'final_score': 0.02116277946080007}
 
 -----------------
-{'docnum': 91, 'handle': 'Southwest', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '0', 'text': '@SouthwestAir Customer service said it was a known problem that they were using same confirmation numbers for domestic and international', 'pert_score': 2.5422738111733576, 'sent_score': -0.4019, 'final_score': 0.04823175928250531}
+{'docnum': 72, 'handle': 'Virgin America', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '1', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '1', 'text': '@VirginAmerica why Cancelled Flight flights today? No precipitation to be scared of!  ❄️❄️❄️', 'pert_score': 2.3093333199837622, 'sent_score': -0.75, 'final_score': -0.05767444107839989}
 
 -----------------
-{'docnum': 77, 'handle': 'US Airways', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '0', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '0', 'text': "@USAirways $75 for that uncertainty? I know u run an account; u don't create policy. But it's an undue penalty for a job req'ing flexibility", 'pert_score': 2.812583883245467, 'sent_score': -0.4601, 'final_score': 0.04717303901478462}
+{'docnum': 47, 'handle': 'American', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '2', 'r5': '1', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '1', 'text': "@AmericanAir why don't you take care of @Cowboycerrone flight screw ups", 'pert_score': 1.1546666599918811, 'sent_score': -0.4639, 'final_score': -0.06439722053919993}
 
 -----------------
-{'docnum': 54, 'handle': 'American', 'r1': '0', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '0', 'r5': '2', 'r6': '0', 'r7': '2', 'r8': '0', 'r9': '2', 'text': '@AmericanAir is flight 2934 dfw to gsp going to be Cancelled Flightled tomorrow?', 'pert_score': 1.5395555466558415, 'sent_score': -0.25, 'final_score': 0.02656167120733602}
-
------------------
-{'docnum': 72, 'handle': 'Virgin America', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '1', 'r4': '1', 'r5': '1', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '1', 'text': '@VirginAmerica why Cancelled Flight flights today? No precipitation to be scared of!  ❄️❄️❄️', 'pert_score': 3.079111093311683, 'sent_score': -0.75, 'final_score': -0.046876657585328}
-
------------------
-{'docnum': 47, 'handle': 'American', 'r1': '2', 'r10': '0', 'r2': '0', 'r3': '2', 'r4': '2', 'r5': '1', 'r6': '0', 'r7': '1', 'r8': '0', 'r9': '1', 'text': "@AmericanAir why don't you take care of @Cowboycerrone flight screw ups", 'pert_score': 1.5395555466558415, 'sent_score': -0.4639, 'final_score': -0.05899832879266398}
-
------------------
-{'docnum': 64, 'handle': 'American', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '0', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '0', 'text': '@AmericanAir should reconsider #usairways acquisition. Flight 1843 AA gold flyers insulted by attendant for hanging jacket!', 'pert_score': 1.5395555466558415, 'sent_score': -0.5562, 'final_score': -0.09591832879266399}
+{'docnum': 64, 'handle': 'American', 'r1': '1', 'r10': '0', 'r2': '0', 'r3': '0', 'r4': '1', 'r5': '0', 'r6': '0', 'r7': '0', 'r8': '0', 'r9': '0', 'text': '@AmericanAir should reconsider #usairways acquisition. Flight 1843 AA gold flyers insulted by attendant for hanging jacket!', 'pert_score': 1.1546666599918811, 'sent_score': -0.5562, 'final_score': -0.10131722053919993}
 
 -----------------

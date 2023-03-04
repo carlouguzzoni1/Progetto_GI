@@ -7,6 +7,9 @@ from project.src.miscellaneous.Misc import *
 from whoosh.lang.wordnet import Thesaurus
 from whoosh import scoring
 from whoosh.lang.porter import stem
+# Import per query expansion.
+import nltk
+from nltk.corpus import wordnet as wn
 
 
 class Searcher:
@@ -131,6 +134,62 @@ class Searcher:
         self._searcher = self._ix.searcher(weighting = scoring_system)
 
 
+    def __expand_query(self):
+        """
+        Espande la query con i sinonimi del synset più pertinente secondo
+        Wordnet.
+        """
+        # Query grezza (lista di token)
+        raw_query = nltk.word_tokenize(self._raw_query)
+        # Query espansa.
+        expanded_query = []
+
+        # Per tutti i token della query grezza.
+        for t in raw_query:
+            # Accoglierà il senso attribuito al token.
+            sense = None
+            # Indica la validità del sinonimo.
+            confidence = 0.0
+
+            # Per tutti i synsets del token t.
+            for s in wn.synsets(t):
+                # Indica la validità del synset.
+                synset_confidence = 0.0
+
+                # Per tutti gli altri termini della query grezza.
+                for u in raw_query:
+                    # Caso stesso token del ciclo esterno. Salta il ciclo.
+                    if  t == u:
+                        continue
+                    # Indica la similarity più alta tra synset s e synset r di u.
+                    best_confidence = 0.0
+
+                    # Per tutti i synsets dei token u.
+                    for r in wn.synsets(u):
+                        # Calcola la similarity tra i synset s ed r.
+                        temp_confidence = s.wup_similarity(r)
+                        # Se è il synset con similarity più alta.
+                        if (temp_confidence > best_confidence):
+                            # Assegna a best_confidence la similarity calcolata.
+                            best_confidence = temp_confidence
+                    
+                    # Incrementa la validità del synset s di best_confidence.
+                    synset_confidence += best_confidence
+
+                # Se synset_confidence è la più alta registrata per il token t.
+                if (synset_confidence > confidence):
+                    # La imposta come massima registrata.
+                    confidence = synset_confidence
+                    # Imposta il senso attribuito al token come quello di s.
+                    sense = s
+            
+            # Espande la query con i sinonimi del synset indicato come più valido.
+            if sense is not None:
+                expanded_query.extend(sense.lemma_names())
+        
+        return expanded_query
+
+
     def submit_query(self, raw_query, results_threshold = 100, expand = False):
         """
         Sottopone una query all'indice Whoosh.
@@ -138,29 +197,43 @@ class Searcher:
         """
         # Imposta la query come attributo di istanza.
         self._raw_query = raw_query
+
         # Forza la non-espansione della query con thesaurus se si tratta di una
         # ricerca in prossimità.
         if raw_query[0] == '"' and raw_query[-1] == '"':
             expand = False
+
+        # Vecchio algoritmo: espansione a tutti i sinonimi usando wordnet.
         # Se opportuno, espande la query con sinonimi. Dopodiché esegue parsing.
+        # if expand:
+        #     # Per cercare i sinonimi delle forme basi dei vocaboli nella query:
+        #     words = [stem(i) for i in raw_query.split()]
+        #     print(words)
+        #     # Per cercare i sinonimi dei vocaboli nella query:
+        #     # words = [i for i in raw_query.split()]
+        #     synonyms = [j for i in words for j in self._thesaurus.synonyms(i)]            
+        #     words.extend(synonyms)
+        #     print(words)
+        #     expanded_query = " ".join(words)
+        #     query = self._parser.parse(expanded_query)
+        # else:
+        #     query = self._parser.parse(self._raw_query)
+
+        # Rewriting con espansione della query (nltk + wordnet).
         if expand:
-            # Per cercare i sinonimi delle forme basi dei vocaboli nella query:
-            words = [stem(i) for i in raw_query.split()]
-            print(words)
-            # Per cercare i sinonimi dei vocaboli nella query:
-            # words = [i for i in raw_query.split()]
-            synonyms = [j for i in words for j in self._thesaurus.synonyms(i)]            
-            words.extend(synonyms)
-            print(words)
-            expanded_query = " ".join(words)
+            expanded_query = self.__expand_query()
+            expanded_query = " ".join(i for i in expanded_query)
+            print(expanded_query)
             query = self._parser.parse(expanded_query)
         else:
             query = self._parser.parse(self._raw_query)
+
         # Decoratore che stampa il tempo di esecuzione.
         clock = time_function(self._searcher.search)
         # Definisce il numero massimo di risultati considerati.
         # Sottopone la query.
         results = clock(query, limit = results_threshold)
+        
         # Se vi sono risultati, li restituisce, altrimenti stampa suggerimenti.
         if results:
             return results
