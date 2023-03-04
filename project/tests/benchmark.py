@@ -84,7 +84,7 @@ counter = 1
 
 # Sottomissione, una ad una, delle query pre-impostate.
 for k, v in queries.items():
-    res = s.submit_query(v, expand=True)
+    res = s.submit_query(v, expand = True)
     try:
         print(k)
         # Per variare funzione di ranking aggiungere ranking_fun = "template"
@@ -106,10 +106,12 @@ for k, v in queries.items():
             )
         tweets_returned.append(len(r.ordered))
     except:
+        dcg_data.append((queries[k], 0))
         ndcg_data.append((queries[k], 0))
-        print("Query:", queries[k],
-              "; measured DCG value: 0",
-              "; optimal DCG value: 0",
+        tweets_returned.append(0)
+        print("Query:", queries[k], "\n",
+              "; measured DCG value: 0", "\n",
+              "; optimal DCG value: 0", "\n",
               "; NDCG value: 0 \t NO RESULTS"
               )
     finally:
@@ -119,6 +121,9 @@ for k, v in queries.items():
         counter += 1
         print("\n")
 
+
+print(dcg_data)
+print(ndcg_data)
 
 # Parte 3: plotting dei risultati.
 # Import necessari.
@@ -132,6 +137,7 @@ def custom_plot(data, parameter, file_name):
     qrs = ["q{}".format(i) for i in range(1, len(queries) + 1)]
     # Asse y: valore DCG/NDCG (all'indice 1 nella tupla).
     vls = [round(element[1], 1) for element in data]
+    print(vls)
     # Creazione del plot.
     x = np.arange(len(qrs))
     width = 0.35

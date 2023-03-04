@@ -29,6 +29,7 @@ project/tests/__init__.py
 project/tests/benchmark.py
 project/tests/indexing_script.py
 project/tests/piechart.py
+project/tests/query_examples.py
 project/tests/query_script.py
 project/tests/wcl.py
 sampleproject.egg-info/PKG-INFO
